@@ -1,0 +1,17 @@
+{
+  "ggpage":{
+
+     "inputBox":{
+      "xpath":"//*[@id='lst-ib']"
+
+    },
+     "searchBtn":{
+     "xpath":"//*[@id='_fZl']/span/svg"
+
+   },
+     "mailBtn": {
+       "xpath":"//*[@id='gbw']/div/div/div[1]/div[2]/a"
+     }
+
+  }
+}
