@@ -37,8 +37,6 @@ LoginPage.prototype.login=function() {
     //BasePage.prototype.submitData.call(this,loginElements,loginData);
 };
 
-
-
 module.exports=LoginPage;
 
 
