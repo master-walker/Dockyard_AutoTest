@@ -16,10 +16,11 @@ function inheritPrototype(subType,superType) {
 
 //var loginPage=new BasePage(driver);
 function LoginPage(driver) {
+    //借用构造函数继承
     BasePage.call(this,driver);
 }
 
-
+//原型式继承
 LoginPage.prototype=new BasePage();
 //inheritPrototype(LoginPage,BasePage);
 
@@ -33,7 +34,7 @@ LoginPage.prototype.login=function() {
     var loginData=[loginData.username,loginData.password];
     //input data and click signin button
     this.submitData(loginElements,loginData);
-    //BasePage.prototype.submitData.apply(this,loginElements,loginData);
+    //BasePage.prototype.submitData.call(this,loginElements,loginData);
 };
 
 
