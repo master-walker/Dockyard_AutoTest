@@ -1,0 +1,23 @@
+{
+  "DyardLoginPage":{
+
+    "email":{
+      "xpath":"//*[@id='loginForm']/div[2]/div/form/ion-list/ion-item[1]/div[1]/div/ion-input/input"
+    },
+
+    "password":{
+      "xpath":"//*[@id='loginForm']/div[2]/div/form/ion-list/ion-item[2]/div[1]/div/ion-label/input"
+    },
+    "signInBtn": {
+      "xpath":"//*[@id='loginForm']/div[2]/div/form/div[2]"
+    }
+
+  },
+  "MenuPage":{
+    "topElement": {
+      "xpath":"//*[@id='tabpanel-t4-0']/ng-component/ion-header/ion-navbar/div[2]/ion-title/div/header-procurement-title/div/ion-row[1]"
+    }
+
+  }
+
+}

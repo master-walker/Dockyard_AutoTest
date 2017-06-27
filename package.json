@@ -1,0 +1,25 @@
+{
+  "description": "Auto test for Restaurant App",
+  "devDependencies": {
+    "co-mocha": "*",
+    "good-mocha-html-reporter": "^2.0.1",
+    "istanbul": "*",
+    "jshint": "^2.9.3",
+    "mocha": "*",
+    "mochawesome": "^2.2.1",
+    "pre-commit": "1.1.1",
+    "selenium-webdriver": "^3.4.0",
+    "should": "*"
+  },
+  "keywords": [
+    "selenium",
+    "js"
+  ],
+  "license": "MIT",
+  "author": "colin.lin <Colin.lin@bindo.com>",
+  "name": "bindotest",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "sh test_dockyard.sh"
+  }
+}
