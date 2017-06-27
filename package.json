@@ -21,5 +21,10 @@
   "version": "0.1.0",
   "scripts": {
     "test": "sh test_dockyard.sh"
+  },
+  "dependencies": {
+    "chai": "^4.0.2",
+    "nodemailer": "^4.0.1",
+    "nodemailer-mailgun-transport": "^1.3.5"
   }
 }
