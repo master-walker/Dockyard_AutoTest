@@ -38,7 +38,7 @@ test.describe('Test for dockyard-test', function () {
         driver.sleep(8000);
         this.comFunc.takeScreenshot(driver, 'loginpage.jpeg');
 
-        this.comFunc.sendMail();
+        //this.comFunc.sendMail();
 
 
         //         var img = driver.findElement(By.tagName("img"));
