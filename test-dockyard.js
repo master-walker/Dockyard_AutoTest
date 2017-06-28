@@ -7,7 +7,7 @@ var config = require('./config/config');
 var testData = require('./test-data/data');
 var getDriver = require('./common/driver');
 var CommonFunction = require('./common/common-function');
-var LoginPage = require('./testcase/login-page');
+var LoginPage = require('./testcase/dockyard/login-page');
 var fs = require('fs');
 
 
@@ -35,7 +35,7 @@ test.describe('Test for dockyard-test', function () {
         //  this.timeout(90000);
         var loginPage = new LoginPage(driver);
         loginPage.login();
-        driver.sleep(10000);
+        driver.sleep(8000);
         this.comFunc.takeScreenshot(driver, 'loginpage.jpeg');
 
         this.comFunc.sendMail();

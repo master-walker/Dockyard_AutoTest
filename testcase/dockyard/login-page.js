@@ -2,10 +2,10 @@
  * Created by bindo on 6/26/17.
  */
 
-var BasePage = require('../common/base-page');
-var Elements = require('../test-data/elements');
-var config = require('../config/config');
-var testData = require('../test-data/data');
+var BasePage = require('../../common/base-page');
+var Elements = require('../../elements/dockyard-elements');
+var config = require('../../config/config');
+var testData = require('../../test-data/data');
 var assert = require('assert');
 var chai = require('chai'),
     expect = chai.expect,
@@ -32,9 +32,9 @@ LoginPage.prototype = new BasePage();
 LoginPage.prototype.login = function () {
 
     //loginPage elements
-    DyardLoginPage = Elements.DyardLoginPage;
-    var loginElements = [DyardLoginPage.email, DyardLoginPage.password,
-        DyardLoginPage.signInBtn];
+    LoginPage = Elements.LoginPage;
+    var loginElements = [LoginPage.email, LoginPage.password,
+        LoginPage.signInBtn];
 
     //input login data
     loginData = testData.LoginData;

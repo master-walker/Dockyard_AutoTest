@@ -6,8 +6,7 @@
 "CVV":"737",
 "driverWaitTime":15000,
 "sleepTime":2000,
-"emailconfigInfo":
-{
+"emailconfigInfo": {
   "from":"ci@bindo.com",
   "to":"colin.lin@bindolabs.com,1158620887@qq.com,masterwalker@163.com",
   "subject":"AutoTest Result,please check! ",
