@@ -36,16 +36,16 @@ test.describe('Test for dockyard-test', function () {
         var loginPage = new LoginPage(driver);
         loginPage.login();
         driver.sleep(8000);
-        this.comFunc.takeScreenshot(driver, 'loginpage.jpeg');
-
+        this.comFunc.takeScreenshot(driver, 'login.jpeg');
         //this.comFunc.sendMail();
-
-
         //         var img = driver.findElement(By.tagName("img"));
         //         img.getAttribute("src").then(function(value) {
         //             assert.equal(value, '/images/index1.jpg');
         //         });
 
     });
+    //test.it('#send test report mail',function () {
+    //    this.comFunc.sendMail();
+    //});
 
 });

@@ -23,15 +23,17 @@ CommonFunction.prototype = {
     getFormattedDate: function () {
         var date = new Date();
         var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" +
-            date.getDate() + " " + date.getHours() + ":"
+            date.getDate() + "-" + date.getHours() + ":"
             + date.getMinutes() + ":" + date.getSeconds();
 
         return str;
     },
     takeScreenshot: function (driver, filename) {
+        dateStr=this.getFormattedDate();
         return driver.takeScreenshot().then(
             function (data) {
-                fs.writeFile(filename, data.replace(/^data:image\/png;base64,/, ''),
+                fs.writeFile("./test-report/image/"+dateStr+"-"+
+                    filename, data.replace(/^data:image\/png;base64,/, ''),
                     'base64', function (err) {
                         if (err) throw err;
                     });
@@ -60,7 +62,7 @@ CommonFunction.prototype = {
             html: html,
             attachments: [
                 {
-                    filename: 'mochawesome.html',
+                    filename: 'testReport.html',
                     path: files
                 },
                 {
@@ -83,6 +85,9 @@ CommonFunction.prototype = {
     },
 
     sendMail: function () {
+        var reportName = fs.readFileSync('/Users/bindo/MyDisk/AutoTest/' +
+            'dockyard-autotest//test-report/reportName.txt');
+        //config.emailconfigInfo.html   reportName.toString()
         var context = fs.readFileSync(config.emailconfigInfo.html,
             'utf8');
         //console.log(context)

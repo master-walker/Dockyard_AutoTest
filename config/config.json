@@ -11,7 +11,7 @@
   "to":"colin.lin@bindolabs.com,1158620887@qq.com,masterwalker@163.com",
   "subject":"AutoTest Result,please check! ",
   "path":"/Users/bindo/MyDisk/AutoTest/dockyard-autotest/test-report",
-  "html":"/Users/bindo/MyDisk/AutoTest/dockyard-autotest/test-report/report.html",
+  "html":"/Users/bindo/MyDisk/AutoTest/dockyard-autotest/test-report/dockyard/2017-06-28/dockyard-test-report.html",
   "files":"/Users/bindo/MyDisk/AutoTest/dockyard-autotest/test-report/testreport.html",
   "textfile":"/usr/local/lib/node_modules/macaca-ios/mochawesome-reports/assets.zip",
   "imagefile":"/usr/local/lib/node_modules/macaca-ios/screenimage.zip"
