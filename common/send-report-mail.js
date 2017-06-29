@@ -1,7 +1,8 @@
 /**
  * Created by bindo on 6/28/17.
  */
-nodemailer = require('nodemailer');
+
+var nodemailer = require('nodemailer');
 var mailgun = require('nodemailer-mailgun-transport');
 var fs = require('fs');
 var config = require('../config/config');
@@ -61,7 +62,7 @@ function sendReportMail() {
     var context = fs.readFileSync(reportName,
         'utf8');
     //console.log(context)
-    if (context.indexOf("Error") != -1) {
+    if (context.indexOf("Fail: 1") != -1) {
         var subject = '【Failed】dockyard test is failed!' +
             'please check! ';
 

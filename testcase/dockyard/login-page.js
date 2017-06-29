@@ -32,24 +32,47 @@ LoginPage.prototype = new BasePage();
 LoginPage.prototype.login = function () {
 
     //loginPage elements
-    LoginPage = Elements.LoginPage;
-    var loginElements = [LoginPage.email, LoginPage.password,
-        LoginPage.signInBtn];
+    LoginPageElements = Elements.LoginPage;
+    var loginElements = [LoginPageElements.email, LoginPageElements.password,
+        LoginPageElements.signInBtn];
 
     //input login data
     loginData = testData.LoginData;
     var loginData = [loginData.username, loginData.password];
 
     //input data and click signin button
-    this.submitData(loginElements, loginData);
-    //BasePage.prototype.submitData.call(this,loginElements,loginData);
+    console.log("execute submitData");
+    this.submitData(loginElements, loginData,5000);
 
-    //验证
-    //topElementText=this.getElementText(Elements.MenuPage.topElement);
-    expectStr = 'Dockyard';
-    //expect(expectStr).to.equal(topElementText);
+
+    //BasePage.prototype.submitData.call(this,loginElements,loginData);
+    //点击clubAccount
+    //driver.sleep(5000);
+    //this.clickElement(Elements.ClubAccountPage.clubAccountElement);
+    //console.log("log 11");
+};
+
+
+LoginPage.prototype.validate=function() {
+    //验证  //span[contains(@text,'Maps')]
+    console.log("execute clickElement");
+    //点击clubAccount
+    this.clickElement(Elements.ClubAccountPage.clubAccount,3000);
+    //var clubAccountElement=this.getElement(
+    //    Elements.ClubAccountPage.clubAccountElement);
+    var userInfo=this.getElementText(Elements.ClubAccountPage.userInfo);
+    //console.log(text);
+    //var clubAccountElementText=this.getElementText(
+    //    Elements.ClubAccountPage.clubAccountElement);
+    //console.log(clubAccountElementText);
+    //topElement.innerText().then(function(value) {
+    //             assert.equal(value, '/images/index1.jpg');
+    //         });
+    //expectStr = 'Dockyard';
+    //expect(testData.LoginData.username).to.equal(userInfo);
     //assert.equal(topElementText,'Dockyard');
 };
+
 
 module.exports = LoginPage;
 

@@ -1,4 +1,14 @@
 {
+
+  "test": {
+    "mail":{
+      "xpath":"//*[@id='gb23']/span[2]"
+    },
+    "ggapps":{
+      "xpath":"//*[@id='gbwa']/div[1]/a"
+    }
+
+  },
   "LoginPage":{
 
     "email":{
@@ -13,9 +23,17 @@
     }
 
   },
-  "MenuPage":{
-    "topElement": {
-      "xpath":"//*[@id='tabpanel-t4-0']/ng-component/ion-header/ion-navbar/div[2]/ion-title/div/header-procurement-title/div/ion-row[1]"
+  "ClubAccountPage":{
+
+    "clubAccountElement": {
+
+      "xpath":"//span[contains(@text,'Club Account')]"
+    },
+    "clubAccount": {
+      "className":"tab-button-icon icon icon-md ion-md-images_account"
+    },
+    "userInfo": {
+      "className":"user-info__info"
     }
 
   }

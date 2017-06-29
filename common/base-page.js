@@ -1,5 +1,5 @@
 var webdriver = require('selenium-webdriver');
-var config = require('../config/config');
+var config = require('../config/config.json');
 const until = webdriver.until;
 
 
@@ -68,9 +68,9 @@ BasePage.prototype = {
     },
 
     //input data and click submit button
-    submitData: function (locators, data) {
-        this.inputData(locators.slice(0, -1), data);
-        this.clickElement(locators[locators.length - 1]);
+    submitData: function (locators, data,sleepTime=config.sleepTime) {
+        this.inputData(locators.slice(0, -1), data,sleepTime);
+        this.clickElement(locators[locators.length - 1],sleepTime);
     }
 
 

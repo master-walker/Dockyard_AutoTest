@@ -1,10 +1,11 @@
 {
 
 "url":"https://dockyard-test.gobindo.com/",
+"url1":"https://www.google.com/",
 "timeOut":"60000",
 "TableNum":"A01",
 "CVV":"737",
-"driverWaitTime":15000,
+"driverWaitTime":30000,
 "sleepTime":2000,
 "emailconfigInfo": {
   "from":"ci@bindo.com",

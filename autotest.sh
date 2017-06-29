@@ -29,7 +29,8 @@ mocha -R good-mocha-html-reporter ./test-dockyard -p $reportFileName
 #mocha --reporter mochawesome test-dockyard.js --reporter-options reportDir=.$reportDir,reportFilename="dockyard-mochawesome-test-report-${curTime}.html"
 
 #send report mail
-node ./common/send-report-mail.js
+#node ./common/send-report-mail.js
+
 
 
 
