@@ -55,25 +55,24 @@ function setMailServer(from, to, subject, html, files, textfile,
 
 function sendReportMail() {
     //读取测试报告路径
-    var reportName = fs.readFileSync('/Users/bindo/MyDisk/AutoTest/' +
-        'dockyard-autotest/test-report/reportName.txt','utf8');
+    var reportName = fs.readFileSync('/Users/bindo/MyDisk/AutoTest/dockyard/test-report/reportName.txt','utf8');
     reportName=reportName.replace(/[\r\n]/g,"");
 
     var context = fs.readFileSync(reportName,
         'utf8');
-    //console.log(context)
+    //console.log(context);
     if (context.indexOf("Fail: 1") != -1) {
         var subject = '【Failed】dockyard test is failed!' +
             'please check! ';
 
         setMailServer(config.emailconfigInfo.from,
-            config.emailconfigInfo.to, subject, context);
+            config.emailconfigInfo.to, subject, context,reportName);
         console.log("test result is failed");
     }
     else {
         var subject = '【Success】 dockyard test is pass!please check! ';
         setMailServer(config.emailconfigInfo.from,
-            config.emailconfigInfo.to, subject, context);
+            config.emailconfigInfo.to, subject, context,reportName);
         console.log("test result is ok");
 
     }

@@ -2,7 +2,6 @@
  * Created by bindo on 6/28/17.
  */
 
-
 //setMailServer: function (from, to, subject, html, files, textfile, imagefile) {
 //
 //    //mailgun邮件服务配置
@@ -71,28 +70,46 @@
 //    }
 //}
 //
+import elements from '../elements/dockyard-elements.json';
+var element=require('../elements/dockyard-elements.json');
+
+let {email,password,signInBtn}=element.loginPage;
+
+console.log(email,password,signInBtn);
 
 
-var webdriver=require('selenium-webdriver');
 
-var getDriver=function() {
-    //if (driver) {
-    //    return driver;
-    //}
-    //else {
-    driver=new webdriver.Builder()
-        .withCapabilities(webdriver.Capabilities.chrome()).build();
-    return driver;
-    //}
-};
+//this.signUp();
+//let script="var text=document.getElementByClassName('registrations_new').innerHTML.replace(/<.+?>/gim,'');return text";
+//    let text=super.executeJs(script);
+//let errElements=[emailErr,passwordErr,confirmPwdErr];
 
+//*[@id='loginForm']/div[2]/div/div[2]/p[2]
+//"className":"sign-up-link"
+//*[@id="loginForm"]/div[2]/div/div[2]/p[2]/a
+//a[contains(text(),'Create an account now!')]
+//p[@class='sign-up-link']
+//html/body/div/p[1]
+//"xpath": "//span[contains(text='TERMS & CONDITIONS')]"
+///html/body/ion-app/ion-modal[2]/div/ng-component/ion-content/div[2]/div
+//"linkText":"Create an account now!"
 
-module.exports=getDriver;
-//var buildDriver=function() {
+//let source = this.driver.getPageSource().then(function (src) {
+//    res.json({ message: src });
+//    //console.log(message);
+//});
+
+//test.it('#sign up',function () {
+//    //this.comFunc.sendMail();
+//    driver.sleep(5000);
+//    loginPage.clickCreateAccount();
+//    driver.sleep(5000);
+//    //signUpPage.signUp();
+//    driver.sleep(5000);
+//    signUpPage.scanTermsConditions();
 //
-//};
+//});
 
-//"//*[@id='tabpanel-t4-0']/ng-component/ion-header/
-//ion-navbar/div[2]/ion-title/div/header-procurement-title/
-//div/ion-row[1]"
-//[@class='tab-button-text']
+
+//#npm test lint --  -R good-mocha-html-reporter -p $reportFileName
+

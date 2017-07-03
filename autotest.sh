@@ -1,9 +1,9 @@
 #/bin/sh
-#git current date and time
+#get current date and time
 curDate="`date +%Y-%m-%d`"
 curTime="`date +%H-%M`"
 
-projectPath="/Users/bindo/MyDisk/AutoTest/dockyard-autotest"
+projectPath="/Users/bindo/MyDisk/AutoTest/dockyard"
 #report file save path
 reportDir="/test-report/dockyard/$curDate"
 
@@ -14,23 +14,28 @@ if (! -d $reportDir)
 fi
 
 echo "start dockyard test"
-#
+
 reportFileName=$projectPath$reportDir/dockyard-test-report-$curTime.html
-wesomeReportName=$projectPath$reportDir/dockyard-mochawesome-test-report-${curTime}.html
+
+wsReportName=$projectPath$reportDir/dockyard-ws-test-report-${curTime}.html
 
 echo $reportFileName > ./test-report/reportName.txt
-#echo $wesomeReportName > ./test-report/reportName.txt
+#echo $wsReportName > ./test-report/reportName.txt
 
-#ouput good-mocha-html-reporter test report
-mocha -R good-mocha-html-reporter ./test-dockyard -p $reportFileName
+#ouput good-mocha-html-reporter test report ./
+for i in {1..10}
+do
+    mocha -R good-mocha-html-reporter test-dockyard.js -p $reportFileName
 
-#ouput mochawesome test report
-#add test report path and report file name options
-#mocha --reporter mochawesome test-dockyard.js --reporter-options reportDir=.$reportDir,reportFilename="dockyard-mochawesome-test-report-${curTime}.html"
 
-#send report mail
-#node ./common/send-report-mail.js
+    #ouput mochawesome test report
+    #add test report path and report file name options
 
+    #mocha --reporter mochawesome test-dockyard.js --reporter-options reportDir=.$reportDir,reportFilename="dockyard-ws-test-report-${curTime}.html"
+
+    #send report mail
+    node ./common/send-report-mail.js
+done
 
 
 

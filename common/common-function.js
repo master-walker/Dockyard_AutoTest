@@ -1,35 +1,27 @@
-/**
- * Created by bindo on 6/26/17.
- */
+import webdriver from 'selenium-webdriver';
+import nodemailer from  'nodemailer';
+import mailgun from 'nodemailer-mailgun-transport';
+import fs from 'fs';
+import config from '../config/config';
+import BasePage from './base-page.js';
 
-var webdriver = require('selenium-webdriver');
-var nodemailer = require('nodemailer');
-var mailgun = require('nodemailer-mailgun-transport');
-var fs = require('fs');
-var config = require('../config/config');
+export default class CommonFunction {
 
-function CommonFunction() {
-
-}
-
-
-CommonFunction.prototype = {
-
-    getDriver: function () {
-        driver = new webdriver.Builder()
+    static getDriver() {
+        let driver = new webdriver.Builder()
             .withCapabilities(webdriver.Capabilities.chrome()).build();
         return driver;
-    },
-    getFormattedDate: function () {
-        var date = new Date();
-        var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" +
+    }
+    static getFormattedDate() {
+        let date = new Date();
+        let str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" +
             date.getDate() + "-" + date.getHours() + ":"
             + date.getMinutes() + ":" + date.getSeconds();
 
         return str;
-    },
-    takeScreenshot: function (driver, filename) {
-        dateStr=this.getFormattedDate();
+    }
+    static takeScreenshot(driver, filename) {
+        let dateStr=this.getFormattedDate();
         return driver.takeScreenshot().then(
             function (data) {
                 fs.writeFile("./test-report/image/"+dateStr+"-"+
@@ -40,6 +32,23 @@ CommonFunction.prototype = {
             });
     }
 
+    static getRandomNum() {
+        return Math.floor(Math.random()*10);
+    }
+
+    static getRandomStr(len) {
+        let str='';
+        for(let i=0;i<len;i++) {
+            str=str+this.getRandomNum()
+        }
+        return str;
+
+    }
+
+    //static drSleep(time) {
+    //    this.getDriver().sleep(time)
+    //}
+
 
     //checkResult:function(orginvalue,expectvalue){
     //    orginvalue.getAttribute("innerText").then(a =>{
@@ -48,10 +57,15 @@ CommonFunction.prototype = {
     //    });
     //}
 
+}
 
-};
 
-module.exports = CommonFunction;
+
+
+
+
+
+
 
 
 

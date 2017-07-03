@@ -1,14 +1,14 @@
 import test from 'selenium-webdriver/testing';
-import config from './config/config.json';
-import ComFun from './common/common-function.js';
-import testData from './test-data/data.json'
-import LoginPage from './testcase/dockyard/login-page.js';
-import BottomNavBtn from './testcase/dockyard/bottom-nav-button.js'
-import ClubAccount from './testcase/dockyard/club-account-page.js';
-import SignUpPage from './testcase/dockyard/sign-up-page.js';
-import elements from './elements/dockyard-elements.json'
+import config from '../config/config.json';
+import ComFun from '../common/common-function.js';
+import testData from '../test-data/data.json'
+import LoginPage from './../testcase/dockyard/login-page.js';
+import BottomNavBtn from '../testcase/dockyard/bottom-nav-button.js'
+import ClubAccount from '../testcase/dockyard/club-account-page.js';
+import SignUpPage from '../testcase/dockyard/sign-up-page.js';
+import elements from '../elements/dockyard-elements.json'
 import chai from 'chai';
-
+import step from '../common/step.js'
 
 const url=config.url;
 let expect=chai.expect;
@@ -28,7 +28,7 @@ test.describe( 'dockyard-auto-test', function() {
         driver.get(url);
     } );
 
-    test.it('#validate error message and sign up',function () {
+    test.it('#vilidate error message and sign up',function () {
 
         let promise = Promise.resolve();
         promise.then(driver.sleep(2000))
@@ -36,7 +36,7 @@ test.describe( 'dockyard-auto-test', function() {
             .then(signUpPage.validateErrMsg())
             .then(signUpPage.checkTermsConditions())
             .then(signUpPage.signUp())
-            .then(driver.sleep(3000))
+            .then(driver.sleep(2000))
             .then(signUpPage.skip())
             .then(bottomNav.switchNavBtn("clubAccount"))
             .then(clubAccount.validateUser())
@@ -45,14 +45,11 @@ test.describe( 'dockyard-auto-test', function() {
     });
 
     //test.it('Login and validate', function() {
-    //    let promise = Promise.resolve();
-    //    promise//.then()//driver.sleep(2000)
-    //    .then(loginPage.login())
-    //    .then(bottomNav.switchNavBtn("clubAccount"))
-    //    .then(clubAccount.validateUser(testData.loginData.username));
+    //
+    //    //loginPage.login(loginDatas);
     //    //driver.sleep(5000);
-    //
-    //
+    //    bottomNav.switchNavBtn("clubAccount");
+    //    clubAccount.validateUser();
     //} );
 
 

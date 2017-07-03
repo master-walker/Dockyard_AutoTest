@@ -1,9 +1,23 @@
 {
-  "LoginData":
-  {
+  "loginData": {
     "username":"colin.lin@bindo.com",
     "password":"hs00258"
-  }
+  },
+  "signUpData": {
+    "email":"colin@bindo.com",
+    "password":"hs00258",
+    "confirmPassword":"hs00258"
+
+  },
+  "errSignData": {
+    "email":"colin.lin@com",
+    "password":"1235",
+    "confirmPassword":"123568"
+
+  },
+  "termsTitle":"TERMS & CONDITIONS",
+  "expectErrMsgs":["Email is invalid","Password min 6 characters","Password Mismatch"]
+
 
 
 

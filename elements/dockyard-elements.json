@@ -9,32 +9,123 @@
     }
 
   },
-  "LoginPage":{
+
+  "bottomNavBtn" :{
+    "menu": {
+      "xpath":""
+    },
+    "history": {
+      "xpath":""
+    },
+    "clubAccount": {
+      "className":"tab-button-icon icon icon-md ion-md-images_account"
+    },
+    "news" : {
+      "xpath":""
+    },
+    "aboutUs": {
+      "xpath":""
+    }
+  },
+
+  "signUpPage": {
+
+    "signDiv" : {
+      "xpath":"//div[@class='registrations_new']"
+    },
+    "email": {
+      "xpath":"//*[@id='email']"
+    },
+    "password": {
+      "xpath":"//*[@id='password']"
+    },
+    "confirmPassword": {
+      "xpath":"//*[@id='repeatPassword']"
+    },
+    "signUpBtn": {
+      "xpath":"/html/body/ion-app/ion-modal[2]/div/ng-component/ion-content/div[2]/div/form/div/button/span"
+    },
+    "acceptTc" :{
+      "xpath": "//label[contains(text(),'Accept T&C')]"
+    },
+    "tcBtn": {
+      "xpath":"//div/button[@class='open_terms']"
+    },
+    "emailErr" : {
+      "xpath":"//span[contains(text(),'Email is invalid')]"
+    },
+    "passwordErr" : {
+      "xpath":"//span[contains(text(),'Password min 6 characters')]"
+    },
+    "confirmPwdErr" : {
+      "xpath":"//span[contains(text(),'Password Mismatch"
+    },
+    "errElement" : {
+      "className" : "valid-error"
+    },
+    "alertMsg" : {
+      "xpath":"//div[contains(text(),'Email is in use')]"
+    },
+    "okBtn" : {
+      "xpath" : "//span[contains(text(),'OK')]"
+    },
+    "skipBtn" : {
+      "xpath" : "/html/body/ion-app/ng-component/ion-nav/ng-component/ion-header/ion-navbar/ion-buttons[2]/button"
+    }
+
+  },
+
+  "termsConditionPage" :{
+    "tcFrame" : {
+      "xpath":"/html/body/ion-app/ion-modal[2]/div/ng-component/ion-content/div[2]/div[2]/div[1]/iframe/html/body/div/p[1]/span[1]"
+    },
+    "tcbody": {
+      "xpath":"/html/body/div/p[1]/span[1]"
+    },
+    "tcTitle" : {
+      "xpath":"//span[contains(text(),'TERMS & CONDITIONS')]"
+    },
+    "closeBtn" : {
+      "xpath" : "/html/body/ion-app/ion-modal[2]/div/ng-component/ion-content/div[2]/div[2]/div[2]/i"
+    }
+  },
+
+  "loginPage":{
 
     "email":{
       "xpath":"//*[@id='loginForm']/div[2]/div/form/ion-list/ion-item[1]/div[1]/div/ion-input/input"
     },
 
-    "password":{
+    "passwd":{
       "xpath":"//*[@id='loginForm']/div[2]/div/form/ion-list/ion-item[2]/div[1]/div/ion-label/input"
     },
     "signInBtn": {
       "xpath":"//*[@id='loginForm']/div[2]/div/form/div[2]"
+    },
+    "createAccount": {
+      "xpath":"//a[contains(text(),'Create an account now!')]"
     }
 
   },
-  "ClubAccountPage":{
+
+  "clubAccountPage":{
 
     "clubAccountElement": {
-
       "xpath":"//span[contains(@text,'Club Account')]"
     },
-    "clubAccount": {
-      "className":"tab-button-icon icon icon-md ion-md-images_account"
-    },
+
     "userInfo": {
       "className":"user-info__info"
     }
+
+  },
+
+  "menuPage": {
+
+    "TheBar":{
+      "xpath":"//*[@id='tabpanel-t2-0']/ng-component/ion-content/div[2]/div/div/ion-grid/ion-row[1]/ion-col[1]/menu-cell/button/span/div"
+    }
+
 
   }
 

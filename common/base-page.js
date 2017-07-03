@@ -1,45 +1,82 @@
-var webdriver = require('selenium-webdriver');
-var config = require('../config/config.json');
+import webdriver from 'selenium-webdriver';
+import config from '../config/config.json';
 const until = webdriver.until;
+const waitTime=config.driverWaitTime;
 
+export default class BasePage {
 
-function BasePage(driver) {
-    this.driver = driver;
-}
+    constructor(driver,visit = false, url = null ) {
+        this.driver=driver;
+        this.url=url;
+        if (visit) {
+            this.driver.get(this.url);
+        }
 
-BasePage.prototype = {
+    }
 
     //判断传入的对象是否为数组
-    isArray: function (o) {
+    static isArray(o) {
         return Object.prototype.toString.call(o) == '[object Array]';
-    },
-
+    }
     //get element
-    getElement: function (locators) {
-        var elements = [];
-        if (this.isArray(locators)) {
-            for (var i = 0; i < locators.length; i++) {
-                element = this.driver.wait(until.elementLocated(locators[i]),
-                    config.driverWaitTime);
-                elements.push(element);
+    getElement(locators) {
+        const elements = [];
+        //return new Promise(function (resolve,reject) {
+        try {
+            if (BasePage.isArray(locators)) {
+                for (let i = 0; i < locators.length; i++) {
+                    let element = this.driver.wait(
+                        until.elementLocated(locators[i]), waitTime);
+                    elements.push(element);
+                }
+                //resolve(elements);
+                return elements;
             }
-            return elements;
+            return (this.driver.wait(
+                until.elementLocated(locators), waitTime));
         }
-        return this.driver.wait(until.elementLocated(locators),
-            config.driverWaitTime);
-    },
+        catch(e) {
+            console.log(e);
+            return false;
+        }
+
+
+    }
+
+    getElements(locator) {
+        try {
+            return this.driver.wait(
+                until.elementsLocated(locator), waitTime);
+        }
+        catch(e) {
+            console.log(e);
+            return false;
+        }
+    }
 
     //get element's text
-    getElementText: function (locator) {
-        return this.getElement(locator).text;
-    },
+    getElementText(locator) {
+        try {
+            return this.getElement(locator).getText();
+        }
+        catch(e) {
+            console.log(e);
+            return false;
+        }
+
+    }
+
+    //
+    executeJs(script,...args) {
+        return this.driver.executeScript(script);
+    }
 
     //click element
-    clickElement: function (locators, sleepTime=config.sleepTime) {
+    clickElement(locators, sleepTime=2000) {
         //get elements
-        elements = this.getElement(locators);
-        if (this.isArray(elements)) {
-            for (var i = 0; i < elements.length; i++) {
+        let elements=this.getElement(locators);
+        if (BasePage.isArray(elements)) {
+            for (let i = 0; i < elements.length; i++) {
                 elements[i].click();
                 this.driver.sleep(sleepTime);
             }
@@ -49,32 +86,44 @@ BasePage.prototype = {
             this.driver.sleep(sleepTime);
         }
 
-    },
+    }
 
     //input data
-    inputData: function (locators, data, sleepTime=config.sleepTime) {
-        elements = this.getElement(locators);
-        if (this.isArray(elements) && this.isArray(data)) {
-            for (var i = 0; i < elements.length; i++) {
+    inputData(locators, data, sleepTime=2000) {
+        let elements = this.getElement(locators);
+        if (BasePage.isArray(elements) && BasePage.isArray(data)) {
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].clear();
                 elements[i].sendKeys(data[i]);
                 this.driver.sleep(sleepTime);
             }
         }
         else {
+            elements.clear();
             elements.sendKeys(data);
             this.driver.sleep(sleepTime);
         }
 
-    },
-
+    }
     //input data and click submit button
-    submitData: function (locators, data,sleepTime=config.sleepTime) {
+    submitData(locators, data,sleepTime=2000) {
         this.inputData(locators.slice(0, -1), data,sleepTime);
         this.clickElement(locators[locators.length - 1],sleepTime);
     }
 
 
-};
+    switchWindow(locator=null) {
+        this.driver.getAllWindowHandles().then(function(w) {
+            console.log(w);
+            return w
+        });
 
+        //this.driver.switchTo(this.getElement(locator));
+        //this.driver.switchTo().defaultContent();
+        //this.getElement(locator).then(function(f) {
+        //    this.driver.switchTo().iframe(f);
+        //});
 
-module.exports = BasePage;
+    }
+
+}
