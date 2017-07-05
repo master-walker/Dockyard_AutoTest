@@ -8,8 +8,8 @@ import BasePage from './base-page.js';
 export default class CommonFunction {
 
     static getDriver() {
-        let driver = new webdriver.Builder()
-            .withCapabilities(webdriver.Capabilities.chrome()).build();
+        let driver = new webdriver.Builder().withCapabilities
+            (webdriver.Capabilities.chrome()).build();
         return driver;
     }
     static getFormattedDate() {
@@ -20,8 +20,9 @@ export default class CommonFunction {
 
         return str;
     }
-    static takeScreenshot(driver, filename) {
+    static takeScreenshot(driver,filename) {
         let dateStr=this.getFormattedDate();
+        //let driver=this.getDriver();
         return driver.takeScreenshot().then(
             function (data) {
                 fs.writeFile("./test-report/image/"+dateStr+"-"+

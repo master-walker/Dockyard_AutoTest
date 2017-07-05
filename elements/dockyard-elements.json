@@ -11,20 +11,21 @@
   },
 
   "bottomNavBtn" :{
+
     "menu": {
-      "xpath":""
+      "xpath":"//span[contains(text(),'Menu')]"
     },
     "history": {
-      "xpath":""
+      "xpath":"//span[contains(text(),'History')]"
     },
     "clubAccount": {
       "className":"tab-button-icon icon icon-md ion-md-images_account"
     },
     "news" : {
-      "xpath":""
+      "xpath": "//span[contains(text(),'News')]"
     },
     "aboutUs": {
-      "xpath":""
+      "xpath":"//span[contains(text(),'About Us')]"
     }
   },
 
@@ -110,23 +111,123 @@
 
   "clubAccountPage":{
 
-    "clubAccountElement": {
-      "xpath":"//span[contains(@text,'Club Account')]"
+    "userInfoAvatar" : {
+      "xpath" : "//user-info/div[@class='user-info__avatar']"
     },
 
     "userInfo": {
       "className":"user-info__info"
+    },
+    "changePsdBtn" : {
+      "xpath" : "//button/span[contains(text(),'Change Password')]"
+    },
+    "signOutBtn" : {
+      "className":"user_show__btn button button-md button-default button-default-md button-block button-block-md"
+    },
+    "confirmBtn" : {
+      "xpath" : "//button[2]/span[contains(text(),'Confirm')]"
     }
 
+
+  },
+
+  "changePsdPage" :{
+    "oldPsBox": {
+      "xpath" : "//*[@id='oldPassword']"
+    },
+    "newPsBox": {
+      "xpath" : "//*[@id='newPassword']"
+    },
+    "confirmPsBox": {
+      "xpath" : "//*[@id='confirmPassword']"
+    },
+    "submitBtn" : {
+      "xpath" : "//button/span[contains(text(),'Submit')]"
+    }
   },
 
   "menuPage": {
 
     "TheBar":{
       "xpath":"//*[@id='tabpanel-t2-0']/ng-component/ion-content/div[2]/div/div/ion-grid/ion-row[1]/ion-col[1]/menu-cell/button/span/div"
+    },
+    "deliveryWayBtn" : {
+      "xpath" : "//ion-row[@class='header-title row']"
+    },
+    "deliveryInfo" : {
+      "xpath" : "//ion-row/span[@class='info']"
+    }
+
+  },
+  "deliveryPage" :{
+
+    "delTypeBtn" : {
+      "xpath" : "//div[@class='delivery-type__label']"
+    },
+    "eatHereImg" : {
+      "xpath" : "//div[@class='delivery-type__icon icon-dine-in']"
+    },
+    "toGoImg" : {
+      "xpath" : "//div[@class='delivery-type__icon icon-pick-up']"
+    },
+    "scanQrBtn" : {
+      "xpath": "//span/i[@class='icon ion-qr-scanner']"
+    },
+    "tableNumBox" : {
+      "xpath" : "//input[@placeholder='Enter Table Number']"
+    },
+    "doneBtn" : {
+      "xpath" : "//button/span[contains(text(),'Done')]"
+  },
+    "exitBtn" : {
+      "xpath" : "//button[@class='web-scanner__custom-btn-exit']"
+    },
+    "nextBtn" : {
+      "xpath" : "//button/span[contains(text(),'Next')]"
+    },
+    "toGoDone" : {
+      "xpath" : "//button/span[contains(text(),'Done')]"
+    },
+    "timePicker" : {
+      "xpath" : "//button[@class='picker-opt']"
+    },
+    "time1" : {
+      "xpath" : "//button[@class='picker-opt'][1]"
     }
 
 
+
+
+
+  },
+
+  "newsPage" : {
+
+    "topBarTitle" : {
+      "xpath" : "//ion-title/div[contains(text(),'News')]"
+    },
+    "title1" : {
+      "xpath" : "/html/body/div/div[1]/a/div/h4"
+    }
+
+  },
+  "aboutUsPage" : {
+
+    "topTitle" : {
+      "xpath" : "//ion-title/div[contains(text(),'About Us')]"
+    },
+
+    "Intro" : {
+      "xpath": "//*[@id='Intro']"
+    },
+    "Chefs" : {
+      "xpath" :"//*[@id='Chefs']"
+    },
+    "Kiosks" : {
+      "xpath" : "//*[@id='Kiosks']"
+    }
+
   }
+
 
 }

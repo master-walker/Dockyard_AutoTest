@@ -3,15 +3,14 @@ import elements from '../../elements/dockyard-elements.json'
 import testData from '../../test-data/data.json'
 import assert from 'assert';
 import chai from 'chai'
-import {emailAccount} from './sign-up-page.js';
+import {userData} from './sign-up-page.js';
 let expect=chai.expect;
 
 //login element and data
 let {email,passwd,signInBtn} = elements.loginPage;
-let {username,password} =testData.signUpData;
+let {username,password} =testData.loginData;
 //input login data
-let loginDatas=[emailAccount,password];
-
+let loginDatas=[username,password];
 
 export default class LoginPage extends BasePage {
 
@@ -19,17 +18,22 @@ export default class LoginPage extends BasePage {
         super(driver,visit,url);
     }
 
-    login(loginData=loginDatas) {
+    login(loginData=userData) {
         //loginPage elements
         let loginElements = [email, passwd, signInBtn];
         //input data and click signin button
-        console.log("execute submit and login");
+        console.log("login");
         super.submitData(loginElements, loginData);
 
     }
     //创建账户
     clickCreateAccount() {
-        super.clickElement(elements.loginPage.createAccount);
+        try {
+            super.clickElement(elements.loginPage.createAccount);
+        }
+        catch(e) {
+            console.log(e)
+        }
     }
 
 

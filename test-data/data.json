@@ -15,8 +15,22 @@
     "confirmPassword":"123568"
 
   },
+  "password" : {
+    "oldPwd" : "",
+    "newPwd" : "hs0099",
+    "confirmPwd" : "hs0099"
+  },
   "termsTitle":"TERMS & CONDITIONS",
-  "expectErrMsgs":["Email is invalid","Password min 6 characters","Password Mismatch"]
+  "expectErrMsgs":["Email is invalid","Password min 6 characters","Password Mismatch"],
+  "newsPageData" : {
+    "title_text1" : "SoulPros x Dockyard Soft Opening Gig!"
+  },
+  "aboutUsData" : {
+    "titles":["Intro","Kiosks","Chefs"]
+  },
+  "tableNumber":"A01",
+  "eatHereInfo":"Eat Here - TableA01",
+  "pickUpInfo1": "Pick up at Location A on Bus Station Side Immediate"
 
 
 

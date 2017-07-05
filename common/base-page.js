@@ -29,7 +29,6 @@ export default class BasePage {
                         until.elementLocated(locators[i]), waitTime);
                     elements.push(element);
                 }
-                //resolve(elements);
                 return elements;
             }
             return (this.driver.wait(
@@ -68,29 +67,45 @@ export default class BasePage {
 
     //
     executeJs(script,...args) {
-        return this.driver.executeScript(script);
+        this.driver.executeScript(script);
+    }
+
+    scrollTo(locator,loc) {
+        let driver=this.driver;
+        //let element=
+        this.getElement(locator).then(function(element){
+        driver.actions().dragAndDrop(element, loc);
+    //}
+    });
+
     }
 
     //click element
-    clickElement(locators, sleepTime=2000) {
+    clickElement(locators, sleepTime=1000) {
         //get elements
-        let elements=this.getElement(locators);
-        if (BasePage.isArray(elements)) {
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].click();
-                this.driver.sleep(sleepTime);
+        let driver=this.driver;
+        //let elements=
+        this.getElement(locators).then( function(elements){
+
+            if (BasePage.isArray(elements)) {
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].click();
+                    driver.sleep(sleepTime);
+                }
             }
-        }
-        else {
-            elements.click();
-            this.driver.sleep(sleepTime);
-        }
+            else {
+                elements.click();
+                driver.sleep(sleepTime);
+            }
+        });
+
 
     }
 
     //input data
-    inputData(locators, data, sleepTime=2000) {
-        let elements = this.getElement(locators);
+    inputData(locators, data, sleepTime=1000) {
+
+        let elements =this.getElement(locators);
         if (BasePage.isArray(elements) && BasePage.isArray(data)) {
             for (let i = 0; i < elements.length; i++) {
                 elements[i].clear();
@@ -106,8 +121,12 @@ export default class BasePage {
 
     }
     //input data and click submit button
-    submitData(locators, data,sleepTime=2000) {
-        this.inputData(locators.slice(0, -1), data,sleepTime);
+    submitData(locators, data,sleepTime=1000) {
+        if(locators.slice(0, -1).length===1) {
+            this.inputData(locators.slice(0, -1)[0], data,sleepTime);
+        }else {
+            this.inputData(locators.slice(0, -1), data,sleepTime);
+        }
         this.clickElement(locators[locators.length - 1],sleepTime);
     }
 

@@ -2,43 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51e2e297-1704-438f-bce4-13a4c6bb37ef" name="Default" comment="0626 1921">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specs/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/bottom-nav-button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/club-account-page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/menu-page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/sign-up-page.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/MaterialIcons-Regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/MaterialIcons-Regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/roboto-light-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/roboto-light-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/roboto-medium-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/roboto-medium-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/roboto-regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/assets/roboto-regular-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/dockyard-mochawesome-test-report-12-38.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/dockyard-mochawesome-test-report-12-38.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/dockyard-test-report-16-59.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-06-29/dockyard-test-report-17-04.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-28-19:25:15-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-11:18:51-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-11:39:34-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-12:34:53-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-12:38:38-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-14:37:29-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-14:42:49-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-14:46:30-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-15:0:22-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-15:34:23-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-17:56:52-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-18:29:10-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-18:34:7-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-18:3:48-login.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-6-29-18:42:58-login.jpeg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/about-us-page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/change-passwd-page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/delivery-page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testcase/dockyard/news-page.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-17.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-17.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-29.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-29.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-30.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-30.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-31.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-31.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-35.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-35.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-37.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-37.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-39.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-39.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-48.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-17-48.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-30.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-30.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-42.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-42.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-44.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-44.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-45.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-45.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-54.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-ws-test-report-18-54.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-16:15:8-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-16:38:55-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-16:50:19-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-16:52:49-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-17:17:37-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-17:31:45-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-17:35:33-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-17:37:29-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-17:39:15-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-17:48:49-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-18:45:39-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-18:54:59-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-19:3:26-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-19:4:12-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-19:4:58-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-19:5:45-validateUserAccount.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-report/image/2017-7-3-19:6:31-validateUserAccount.jpeg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autotest.sh" afterPath="$PROJECT_DIR$/autotest.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/base-page.js" afterPath="$PROJECT_DIR$/common/base-page.js" />
@@ -46,11 +56,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/send-report-mail.js" afterPath="$PROJECT_DIR$/common/send-report-mail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/tmp.js" afterPath="$PROJECT_DIR$/common/tmp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elements/dockyard-elements.json" afterPath="$PROJECT_DIR$/elements/dockyard-elements.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-data/data.json" afterPath="$PROJECT_DIR$/test-data/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-dockyard.js" afterPath="$PROJECT_DIR$/test-dockyard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-test-report-19-03.html" afterPath="$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-test-report-19-03.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-report/reportName.txt" afterPath="$PROJECT_DIR$/test-report/reportName.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mocha.opts" afterPath="$PROJECT_DIR$/test/mocha.opts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/dockyard/club-account-page.js" afterPath="$PROJECT_DIR$/testcase/dockyard/club-account-page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/dockyard/login-page.js" afterPath="$PROJECT_DIR$/testcase/dockyard/login-page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/dockyard/menu-page.js" afterPath="$PROJECT_DIR$/testcase/dockyard/menu-page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testcase/dockyard/sign-up-page.js" afterPath="$PROJECT_DIR$/testcase/dockyard/sign-up-page.js" />
     </list>
     <ignored path="Dockyard_AutoTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,21 +85,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test-dockyard.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-dockyard.js">
+      <file leaf-file-name="dockyard-elements.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elements/dockyard-elements.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state vertical-scroll-proportion="-19.594595">
+              <caret line="193" column="10" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign-up-page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/dockyard/sign-up-page.js">
+      <file leaf-file-name="delivery-page.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testcase/dockyard/delivery-page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49517685">
+              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,43 +107,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send-report-mail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/send-report-mail.js">
+      <file leaf-file-name="menu-page.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcase/dockyard/menu-page.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autotest.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/autotest.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5612472">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dockyard-elements.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elements/dockyard-elements.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0270271">
-              <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club-account-page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/dockyard/club-account-page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-data/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5135136">
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-dockyard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-dockyard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base-page.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/base-page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tmp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/tmp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#122#0" expanded="false" />
+                <element signature="e#2236#2252#0" expanded="false" />
+                <element signature="e#2472#2515#0" expanded="false" />
+                <element signature="e#2856#2920#0" expanded="false" />
+                <element signature="e#2992#3026#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -167,22 +197,26 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/testcase/dockyard/LoginPage.js" />
         <option value="$PROJECT_DIR$/common/BasePage.js" />
-        <option value="$PROJECT_DIR$/testcase/dockyard/menu-page.js" />
         <option value="$PROJECT_DIR$/testcase/dockyard/bottom-nav-button.js" />
-        <option value="$PROJECT_DIR$/testcase/dockyard/login-page.js" />
-        <option value="$PROJECT_DIR$/common/base-page.js" />
-        <option value="$PROJECT_DIR$/common/common-function.js" />
-        <option value="$PROJECT_DIR$/test/mocha.opts" />
         <option value="$PROJECT_DIR$/specs/test.js" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/testcase/dockyard/club-account-page.js" />
-        <option value="$PROJECT_DIR$/common/tmp.js" />
-        <option value="$PROJECT_DIR$/test-dockyard.js" />
-        <option value="$PROJECT_DIR$/elements/dockyard-elements.json" />
-        <option value="$PROJECT_DIR$/testcase/dockyard/sign-up-page.js" />
-        <option value="$PROJECT_DIR$/test-data/data.json" />
         <option value="$PROJECT_DIR$/common/send-report-mail.js" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/news-page.js" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/about-us-page.js" />
+        <option value="$PROJECT_DIR$/test/mocha.opts" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/change-passwd-page.js" />
+        <option value="$PROJECT_DIR$/common/common-function.js" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/club-account-page.js" />
         <option value="$PROJECT_DIR$/autotest.sh" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/sign-up-page.js" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/login-page.js" />
+        <option value="$PROJECT_DIR$/test-data/data.json" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/menu-page.js" />
+        <option value="$PROJECT_DIR$/common/base-page.js" />
+        <option value="$PROJECT_DIR$/common/tmp.js" />
+        <option value="$PROJECT_DIR$/elements/dockyard-elements.json" />
+        <option value="$PROJECT_DIR$/test-dockyard.js" />
+        <option value="$PROJECT_DIR$/testcase/dockyard/delivery-page.js" />
       </list>
     </option>
   </component>
@@ -224,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,10 +268,29 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dockyard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="dockyard">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="testcase">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -516,15 +568,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="807" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22903453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2572234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2951049" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09090909" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -535,6 +586,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32587412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -570,38 +622,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/base-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/specs/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elements/dockyard-elements.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/dockyard/login-page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -614,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5355286">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1132076">
           <caret line="167" column="28" selection-start-line="167" selection-start-column="28" selection-end-line="167" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,26 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33264464">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/dockyard/menu-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47257385">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/dockyard/bottom-nav-button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13788098">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,64 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-3-16:15:8-validateUserAccount.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/mocha.opts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specs/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3529412">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-3-16:38:55-validateUserAccount.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/tmp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5294118">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#41#122#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/dockyard/login-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/base-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7058824">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-report/reportName.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,80 +793,225 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6378132">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/common-function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27310926">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-dockyard.js">
+    <entry file="file://$PROJECT_DIR$/test-report/dockyard/2017-07-03/dockyard-test-report-19-03.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/dockyard/sign-up-page.js">
+    <entry file="file://$PROJECT_DIR$/test-report/reportName.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44646925">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-3-18:45:39-validateUserAccount.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/send-report-mail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-4-11:4:2-news.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-4-11:6:18-news.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/bottom-nav-button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33279744">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-4-11:39:8-about-us.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/about-us-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4742765">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/news-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69292605">
+          <caret line="18" column="11" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mocha.opts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/dockyard/2017-07-03/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="28.827974">
+          <caret line="30" column="577548" selection-start-line="30" selection-start-column="577548" selection-end-line="30" selection-end-column="577548" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/dockyard/club-account-page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-5-11:29:59-validateUserAccount.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-5-11:39:3-validateUserAccount2.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-5-12:5:46-validateUserAccount.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-report/image/2017-7-5-12:5:46-validateUserAccount2.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/change-passwd-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18971062">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autotest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42352942">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/sign-up-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2411575">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/login-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63022506">
+          <caret line="18" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/tmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#122#0" expanded="false" />
+            <element signature="e#2236#2252#0" expanded="false" />
+            <element signature="e#2472#2515#0" expanded="false" />
+            <element signature="e#2856#2920#0" expanded="false" />
+            <element signature="e#2992#3026#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/base-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5135136">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elements/dockyard-elements.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.594595">
+          <caret line="193" column="10" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/menu-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elements/dockyard-elements.json">
+    <entry file="file://$PROJECT_DIR$/test-dockyard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0270271">
-          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autotest.sh">
+    <entry file="file://$PROJECT_DIR$/testcase/dockyard/delivery-page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5612472">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.49517685">
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,3 @@
 file
---reporter mochawesome
 --require babel-register
 

@@ -22,8 +22,10 @@ wsReportName=$projectPath$reportDir/dockyard-ws-test-report-${curTime}.html
 echo $reportFileName > ./test-report/reportName.txt
 #echo $wsReportName > ./test-report/reportName.txt
 
-#ouput good-mocha-html-reporter test report ./
-for i in {1..10}
+#ouput good-mocha-html-reporter test report
+#macha opts --reporter mochawesome
+
+for i in {1..5}
 do
     mocha -R good-mocha-html-reporter test-dockyard.js -p $reportFileName
 

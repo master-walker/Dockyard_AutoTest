@@ -61,7 +61,7 @@ function sendReportMail() {
     var context = fs.readFileSync(reportName,
         'utf8');
     //console.log(context);
-    if (context.indexOf("Fail: 1") != -1) {
+    if (context.indexOf("Failed: 0") == -1) {
         var subject = '【Failed】dockyard test is failed!' +
             'please check! ';
 

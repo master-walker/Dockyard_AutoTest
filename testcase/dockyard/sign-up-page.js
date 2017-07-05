@@ -18,8 +18,10 @@ let signUpData = testData.signUpData;
 let signUpDatas = [signUpData.email, signUpData.password,
     signUpData.confirmPassword];
 //生成注册账号
-export let emailAccount="colin"+ComFun.getRandomStr(6)+"@bindo.com";
+let emailAccount="col"+ComFun.getRandomStr(6)+"@bindo.com";
+//export let acoountPsd=signUpData.password;
 signUpDatas[0]=emailAccount;
+export let userData=[emailAccount,signUpData.password];
 
 //输入的错误数据
 let errSignData=testData.errSignData;
@@ -75,11 +77,15 @@ export default class SignUpPage extends BasePage {
         let errElements=super.getElements(errElement);
             //比较出现的错误提示信息
             for (let i=0;i<errElements.length;i++) {
-                super.getElementText(errElements[i]).then((errMsg) => {
+                super.getElementText(errElements[i]).then(function  (errMsg)  {
                      expect(errMsg).to.include(errMsgs[i]);
                 });
             }
     }
+
+
+
+
 
 }
 

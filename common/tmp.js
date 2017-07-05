@@ -70,14 +70,14 @@
 //    }
 //}
 //
-import elements from '../elements/dockyard-elements.json';
-var element=require('../elements/dockyard-elements.json');
+//import elements from '../elements/dockyard-elements.json';
+//var element=require('../elements/dockyard-elements.json');
+//
+//let {email,password,signInBtn}=element.loginPage;
+//
+//console.log(email,password,signInBtn);
 
-let {email,password,signInBtn}=element.loginPage;
-
-console.log(email,password,signInBtn);
-
-
+//"xpath" : "//span[contains(text,'Sign')]"
 
 //this.signUp();
 //let script="var text=document.getElementByClassName('registrations_new').innerHTML.replace(/<.+?>/gim,'');return text";
@@ -113,3 +113,21 @@ console.log(email,password,signInBtn);
 
 //#npm test lint --  -R good-mocha-html-reporter -p $reportFileName
 
+//super.clickElement(signOutBtn);
+//super.clickElement(confirmBtn);
+//this.driver.actions().dragAndDrop(super.getElement(userInfoAvatar),{x:100,y:300});
+//let els1 = super.getElements({"className":"user_show__btn button button-md button-default button-default-md button-block button-block-md"});
+//els1.then(function(els){
+//    els[1].click();
+//});
+//this.driver.sleep(1000);
+//let els2 = super.getElements({"className":'alert-button '});
+//els2.then(function(els){
+//    els[1].click();
+//});
+///button/span[contains(text(),'Done')]
+//button[@class='bar-button bar-button-md bar-button-default bar-button-default-md']"
+
+
+let arr=[0,1];
+console.log(arr.slice(0,-1));
