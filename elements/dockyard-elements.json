@@ -177,7 +177,8 @@
       "xpath" : "//input[@placeholder='Enter Table Number']"
     },
     "doneBtn" : {
-      "xpath" : "//button/span[contains(text(),'Done')]"
+      "className" : "bar-button bar-button-md bar-button-default bar-button-default-md"
+
   },
     "exitBtn" : {
       "xpath" : "//button[@class='web-scanner__custom-btn-exit']"
@@ -193,7 +194,15 @@
     },
     "time1" : {
       "xpath" : "//button[@class='picker-opt'][1]"
+    },
+    "selectTimer" : {
+      "xpath" : "//button[@class='picker-opt picker-opt-selected']"
+    },
+    "selectTimer2" : {
+      "xpath" : "/html/body/ion-app/ion-picker-cmp/div/div[2]/div[2]/div/button[3]"
     }
+
+
 
 
 

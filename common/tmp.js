@@ -129,5 +129,28 @@
 //button[@class='bar-button bar-button-md bar-button-default bar-button-default-md']"
 
 
+//"xpath" : "//button/span[contains(text(),'Done')]"
+
+//button[@class='bar-button bar-button-md bar-button-default bar-button-default-md xpather-highlight xpath-important-highlight']
+
+
+
+
+
+
+
+if(pickTime!==null) {
+    let pickInfo=delInfo+pickTime;
+    expect(pickInfo).to.equal(delText);
+
+}else {
+    expect(delInfo).to.equal(delText);
+}
+
+generateString(str) {
+
+    pickInfo= "Pick up at Location A on Bus Station Side at"+str;
+}
+
 let arr=[0,1];
 console.log(arr.slice(0,-1));

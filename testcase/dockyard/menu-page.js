@@ -27,9 +27,10 @@ export default class MenuPage extends BasePage {
     }
 
     validateDelWay(delInfo=eatHereInfo) {
+
         try{
             super.getElementText(deliveryInfo).then(function(delText) {
-            expect(delInfo).to.equal(delText);
+                expect(delInfo).to.equal(delText);
             });
         }
         catch(e) {

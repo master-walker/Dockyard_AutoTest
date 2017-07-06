@@ -67,7 +67,10 @@ export default class BasePage {
 
     //
     executeJs(script,...args) {
-        this.driver.executeScript(script);
+        let thenObj=Promise.resolve(this.driver.executeScript(script));
+        return thenObj.then(function(value){
+             return value;
+        });
     }
 
     scrollTo(locator,loc) {

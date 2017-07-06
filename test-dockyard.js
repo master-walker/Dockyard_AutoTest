@@ -14,7 +14,7 @@ import DeliveryPage from './testcase/dockyard/delivery-page.js'
 import elements from './elements/dockyard-elements.json'
 import chai from 'chai';
 import {userData} from './testcase/dockyard/sign-up-page.js'
-
+//import iwebdriver from 'selenium-webdriver/bin/JavascriptExecutor'//
 
 const url=config.url;
 let expect=chai.expect;
@@ -37,7 +37,7 @@ let newLgDatas=[username,newPwd];
 let newPsds=[newPwd,oldPwd,oldPwd];
 
 test.describe( 'dockyard-auto-test', function() {
-    this.timeout( 120000 );
+    this.timeout( 90000 );
 
     test.before( function() {
         driver.get(url);
@@ -67,14 +67,36 @@ test.describe( 'dockyard-auto-test', function() {
     //});
 
     test.it('choose delivery and validate', function() {
+
         promise.then(loginPage.login(loginDatas))
-            .then(driver.sleep(5000))
-        //.then(bottomNav.switchNavBtn("clubAccount"))
-        .then(menuPage.enterDelivery())
-        //.then(deliveryPage.eatHere())
-        //    .then(menuPage.validateDelWay())
-        //    .then(deliveryPage.pickUp())
-        .then(menuPage.validateDelWay(deliveryPage.pickUp()));
+            .then(driver.sleep(3000))
+            //.then(bottomNav.switchNavBtn("clubAccount"))
+            .then(menuPage.enterDelivery())
+            .then(deliveryPage.eatHere())
+            .then(deliveryPage.inputTableNum())
+            .then(driver.sleep(2000))
+            .then(deliveryPage.clickDone())
+            .then(menuPage.validateDelWay())
+            //.then(deliveryPage.pickUp())
+            //.then(deliveryPage.choosePickTime(4))
+            //.then(deliveryPage.getPickTime()
+            //    .then(deliveryPage.clickTogoDone())
+            //    .then(function(pickTime) {
+            //        let pickInfo= "Pick up at Location A on" +
+            //            " Bus Station Side at "+pickTime;
+            //        driver.sleep(3000);
+            //        menuPage.validateDelWay(pickInfo);
+            //    })
+            //)
+            .catch(function(err) {
+                console.log(err);
+            });
+        //.then(deliveryPage.getPickTime())
+        //.then(deliveryPage.clickTogoDone())
+        //.then(function(value) {
+        //    console.log(value);
+        //});
+        //.then(menuPage.validateDelWay());
 
     } );
 
@@ -91,37 +113,37 @@ test.describe( 'dockyard-auto-test', function() {
 
     //test.it('#change password and validate',function () {
 
-        //promise
-        //.then(loginPage.login(loginDatas))
-        //    .then(driver.sleep(3000))
-        //    .then(bottomNav.switchNavBtn("clubAccount"))
-        //    .then(clubAccount.clickChangePsd())
-        //    .then(changePsdPage.changePasswd())
-        //    .then(driver.scroll)
-        //    .then(clubAccount.signOut())
-        //    .then(ComFun.takeScreenshot(driver,"signOut.jpeg"))
-        //    .then(loginPage.login(newLgDatas))
-        //    .then(driver.sleep(3000))
-        //    .then(bottomNav.switchNavBtn("clubAccount"))
-        //    .then(clubAccount.clickChangePsd())
-        //    .then(changePsdPage.changePasswd(newPsds))
-        //    .then(clubAccount.signOut())
-        //    .then(ComFun.takeScreenshot(driver,"signOut.jpeg"))
-        //    .then(loginPage.login(loginDatas));
+    //promise
+    //.then(loginPage.login(loginDatas))
+    //    .then(driver.sleep(3000))
+    //    .then(bottomNav.switchNavBtn("clubAccount"))
+    //    .then(clubAccount.clickChangePsd())
+    //    .then(changePsdPage.changePasswd())
+    //    .then(driver.scroll)
+    //    .then(clubAccount.signOut())
+    //    .then(ComFun.takeScreenshot(driver,"signOut.jpeg"))
+    //    .then(loginPage.login(newLgDatas))
+    //    .then(driver.sleep(3000))
+    //    .then(bottomNav.switchNavBtn("clubAccount"))
+    //    .then(clubAccount.clickChangePsd())
+    //    .then(changePsdPage.changePasswd(newPsds))
+    //    .then(clubAccount.signOut())
+    //    .then(ComFun.takeScreenshot(driver,"signOut.jpeg"))
+    //    .then(loginPage.login(loginDatas));
 
-        //});
+    //});
 
     //test.it('#check news and about us',function () {
 
-        //promise
-        //    //.then(loginPage.login())
-        //    .then(driver.sleep(3000))
-        //    .then(bottomNav.switchNavBtn("news"))
-        //    .then(ComFun.takeScreenshot(driver,"news.jpeg"))
-        //    .then(newsPage.checkNews())
-        //    .then(bottomNav.switchNavBtn("aboutUs"))
-        //    .then(ComFun.takeScreenshot(driver,"about-us.jpeg"))
-        //    .then(aboutUsPage.checkAboutUs());
+    //promise
+    //    //.then(loginPage.login())
+    //    .then(driver.sleep(3000))
+    //    .then(bottomNav.switchNavBtn("news"))
+    //    .then(ComFun.takeScreenshot(driver,"news.jpeg"))
+    //    .then(newsPage.checkNews())
+    //    .then(bottomNav.switchNavBtn("aboutUs"))
+    //    .then(ComFun.takeScreenshot(driver,"about-us.jpeg"))
+    //    .then(aboutUsPage.checkAboutUs());
 
     //});
 
