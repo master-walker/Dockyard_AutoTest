@@ -6,6 +6,7 @@ import BasePage from  '../../common/base-page.js'
 import elements from '../../elements/dockyard-elements.json'
 import testData from '../../test-data/data.json'
 import chai from 'chai';
+import {Key} from 'selenium-webdriver/lib/input'
 
 let expect = chai.expect;
 let should = chai.should();
@@ -30,41 +31,24 @@ export default class DeliveryPage extends BasePage {
 
     eatHere() {
         super.clickElement(eatHereImg);
-        this.driver.sleep(2000);
         this.scanQrCode();
-        this.driver.sleep(2000);
-        //submit table number
-
-        //let p=Promise.resolve();
-        //p.then()
-        //    .then();
-
-        //this.driver.sleep(5000);
-        //this.clickDone();
-        //super.getElement(doneBtn).then(function(eles){
-        //    eles[0].click();
-        //});
-
-        //this.driver.sleep(2000);
-        //console.log("done");
-        //super.submitData(tableNumEls,testData.tableNumber)
-
     }
     inputTableNum() {
-        super.inputData(tableNumBox,testData.tableNumber);
-        this.driver.sleep(2000);
+        super.submitData(tableNumEls,testData.tableNumber);
     }
-
+    //deprecated
     clickDone() {
-        super.clickElement(doneBtn);
+        super.clickElement(doneBtn,1000,'clickDone');
     }
 
+    //
     pickUp() {
         super.clickElement(toGoImg);
         //choose pick up point
         super.clickElement(nextBtn);
         this.driver.sleep(2000);
     }
+
     choosePickTime(num=0) {
 
         let driver=this.driver;

@@ -25,7 +25,7 @@ echo $reportFileName > ./test-report/reportName.txt
 #ouput good-mocha-html-reporter test report
 #macha opts --reporter mochawesome
 
-for i in {1..5}
+for i in {1..1}
 do
     mocha -R good-mocha-html-reporter test-dockyard.js -p $reportFileName
 
@@ -37,6 +37,7 @@ do
 
     #send report mail
     node ./common/send-report-mail.js
+
 done
 
 

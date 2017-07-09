@@ -9,7 +9,7 @@ import chai from 'chai';
     let expect = chai.expect;
     let should = chai.should();
 
-let {deliveryWayBtn,deliveryInfo}=elements.menuPage;
+let {western,deliveryWayBtn,deliveryInfo}=elements.menuPage;
 let {tableNumber,eatHereInfo,pickUpInfo1}=testData;
 //let eatHereInfo="Eat Here - Table"+testData.tableNumber;
 //let pickUpInfo="Pick up at Location A on Bus Station Side Immediate";
@@ -37,6 +37,10 @@ export default class MenuPage extends BasePage {
             console.log(e);
         }
 
+    }
+
+    enterRestaurant() {
+        super.clickElement(western);
     }
 
 

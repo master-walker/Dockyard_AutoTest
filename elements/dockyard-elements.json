@@ -29,6 +29,18 @@
     }
   },
 
+  "commonPage" :  {
+    "checkOut" : {
+      "xpath" : "//button[@class='cart_button']"
+    },
+    "checkOut2" : {
+      "xpath" : "//ion-footer/button/span[contains(text(),'Check Out')]"
+    },
+    "payCard" : {
+      "xpath" : "//button[@class='item-cover item-cover-md item-cover-default item-cover-default-md']"
+    }
+  },
+
   "signUpPage": {
 
     "signDiv" : {
@@ -151,6 +163,9 @@
     "TheBar":{
       "xpath":"//*[@id='tabpanel-t2-0']/ng-component/ion-content/div[2]/div/div/ion-grid/ion-row[1]/ion-col[1]/menu-cell/button/span/div"
     },
+    "western" : {
+      "xpath" : "//div/span[contains(text(),'Western')]"
+    },
     "deliveryWayBtn" : {
       "xpath" : "//ion-row[@class='header-title row']"
     },
@@ -158,7 +173,46 @@
       "xpath" : "//ion-row/span[@class='info']"
     }
 
+
   },
+  "westernPage" :{
+
+    "dishesName" : {
+      "xpath" : "//ion-label/div[@class='products-index__product-name']"
+    },
+    "dishesPrice" : {
+      "xpath" : "//ion-label/div/div[@class='products-index__product-price']"
+    },
+
+    "dishesAdd": {
+      "xpath":"//quantity-ticker/div/div[@class='minus-mask']"
+    },
+    "dishesMinus" : {
+      "xpath" : "//quantity-ticker/div/div[@class='plus-mask']"
+    },
+
+    "secondDish" : {
+      "xpath":"//*[@id='lbl-10']/product/ion-label/div[2]/div[2]/quantity-ticker/div/div[2]"
+    },
+    "thirdDish" : {
+      "xpath":"//*[@id='lbl-11']/product/ion-label/div[2]/div[2]/quantity-ticker/div/div[2]"
+    }
+
+
+  },
+  "modifierPage" : {
+
+    "modifierName" : {
+      "xpath" : "/html/body/ion-app/ion-modal/div/modifier-selector/ion-content/div[2]/form/ion-list/ion-list/ion-item[1]/div[1]/div/ion-label/div/span/div[1]"
+    },
+    "addBtn" : {
+      "xpath" :"/html/body/ion-app/ion-modal/div/modifier-selector/ion-content/div[2]/form/ion-list/ion-list/ion-item[1]/div[1]/div/ion-label/div/quantity-ticker/div/div[2]"
+    },
+    "confirmBtn" : {
+      "xpath" : "/html/body/ion-app/ion-modal/div/modifier-selector/ion-header/ion-navbar/ion-buttons[2]/button"
+    }
+  },
+
   "deliveryPage" :{
 
     "delTypeBtn" : {
@@ -177,9 +231,8 @@
       "xpath" : "//input[@placeholder='Enter Table Number']"
     },
     "doneBtn" : {
-      "className" : "bar-button bar-button-md bar-button-default bar-button-default-md"
-
-  },
+      "xpath" : "/html/body/ion-app/ion-modal[2]/div/ng-component/ion-header/ion-navbar/ion-buttons[2]/button"
+    },
     "exitBtn" : {
       "xpath" : "//button[@class='web-scanner__custom-btn-exit']"
     },
@@ -197,10 +250,8 @@
     },
     "selectTimer" : {
       "xpath" : "//button[@class='picker-opt picker-opt-selected']"
-    },
-    "selectTimer2" : {
-      "xpath" : "/html/body/ion-app/ion-picker-cmp/div/div[2]/div[2]/div/button[3]"
     }
+
 
 
 

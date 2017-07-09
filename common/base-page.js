@@ -84,7 +84,7 @@ export default class BasePage {
     }
 
     //click element
-    clickElement(locators, sleepTime=1000) {
+    clickElement(locators, sleepTime=1000,info='') {
         //get elements
         let driver=this.driver;
         //let elements=
@@ -101,6 +101,7 @@ export default class BasePage {
                 driver.sleep(sleepTime);
             }
         });
+        console.log(info);
 
 
     }

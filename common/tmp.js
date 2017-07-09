@@ -130,14 +130,36 @@
 
 
 //"xpath" : "//button/span[contains(text(),'Done')]"
+//"className" : "bar-button bar-button-md bar-button-default bar-button-default-md"
 
 //button[@class='bar-button bar-button-md bar-button-default bar-button-default-md xpather-highlight xpath-important-highlight']
 
+//"css":"body > ion-app > ion-modal:nth-child(5) > div > ng-component > ion-header > ion-navbar > ion-buttons:nth-child(4) > button"
 
 
+"let elements=document.getElementsByClassName('button-inner');for(let i=0;i<elements.length;i++) {if(elements[i].innerHTML=='Done'){return elements[i]}}";
+let script="let elements=document.getElementsByClassName('button-inner');" +
+    "for(let i=0;i<elements.length;i++) {" +
+    "if(elements[i].innerHTML=='Done'){" +
+    "return elements[i]}" +
+    "}";
+"doneBtn1" : {
+    "js" : "let elements=document.getElementsByClassName('button-inner');for(let i=0;i<elements.length;i++) {if(elements[i].innerHTML=='Done'){return elements[i]}}"
+}
 
+"selectTimer2" : {
+    "xpath" : "/html/body/ion-app/ion-picker-cmp/div/div[2]/div[2]/div/button[3]"
+}
+"//*[@id='lbl-100']/product/ion-label/div[2]/div[2]/quantity-ticker/div/div[2]"
 
-
+//let pObj=elements[i].click();thenObj=
+//let pObj=Promise.resolve(this.driver.executeScript(script));
+//return pObj.then(function(ele){
+//        ele.click();
+//});
+//super.getElements(doneBtn).then(function(els){
+//    els[2].click();
+//});
 
 if(pickTime!==null) {
     let pickInfo=delInfo+pickTime;
@@ -148,7 +170,6 @@ if(pickTime!==null) {
 }
 
 generateString(str) {
-
     pickInfo= "Pick up at Location A on Bus Station Side at"+str;
 }
 
