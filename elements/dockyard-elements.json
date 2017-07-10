@@ -191,6 +191,7 @@
       "xpath" : "//quantity-ticker/div/div[@class='plus-mask']"
     },
 
+
     "secondDish" : {
       "xpath":"//*[@id='lbl-10']/product/ion-label/div[2]/div[2]/quantity-ticker/div/div[2]"
     },
@@ -202,15 +203,26 @@
   },
   "modifierPage" : {
 
+    "modifier" : {
+      "xpath" : "//modifier-selector[@class='ion-page show-page']"
+    },
+
     "modifierName" : {
       "xpath" : "/html/body/ion-app/ion-modal/div/modifier-selector/ion-content/div[2]/form/ion-list/ion-list/ion-item[1]/div[1]/div/ion-label/div/span/div[1]"
+    },
+    "plusBtn" : {
+      "xpath" : "//ion-label/div/quantity-ticker/div/div[@class='minus-mask']"
     },
     "addBtn" : {
       "xpath" :"/html/body/ion-app/ion-modal/div/modifier-selector/ion-content/div[2]/form/ion-list/ion-list/ion-item[1]/div[1]/div/ion-label/div/quantity-ticker/div/div[2]"
     },
     "confirmBtn" : {
       "xpath" : "/html/body/ion-app/ion-modal/div/modifier-selector/ion-header/ion-navbar/ion-buttons[2]/button"
+    },
+    "optionsBtn" : {
+      "xpath":"//div/a[@class='options-btn']"
     }
+
   },
 
   "deliveryPage" :{

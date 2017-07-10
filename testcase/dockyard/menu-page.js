@@ -39,8 +39,14 @@ export default class MenuPage extends BasePage {
 
     }
 
-    enterRestaurant() {
-        super.clickElement(western);
+    enterRestaurant(res) {
+
+        switch(res) {
+            case 'western':
+                super.clickElement(western);
+        }
+
+
     }
 
 

@@ -74,31 +74,31 @@ test.describe( 'dockyard-auto-test', function() {
 
         promise.then(loginPage.login(loginDatas))
             .then(driver.sleep(3000))
-            .then(bottomNav.switchNavBtn("menu"))
-            .then(menuPage.enterDelivery())
-            .then(deliveryPage.eatHere())
-            .then(deliveryPage.inputTableNum())
-            //.then(ComFun.takeScreenshot(driver,"tableNum.jpeg"))
-            .then(driver.sleep(2000))
-            .then(menuPage.validateDelWay())
-            .then(ComFun.takeScreenshot(driver,"eatHereInfo.jpeg"))
+            //.then(bottomNav.switchNavBtn("menu"))
             //.then(menuPage.enterDelivery())
-            //.then(deliveryPage.pickUp())
-            //.then(deliveryPage.choosePickTime(2))
-            //.then(ComFun.takeScreenshot(driver,"pickTime.jpeg"))
-            //.then(deliveryPage.getPickTime()
-            //    .then(deliveryPage.clickTogoDone())
-            //    .then(function(pickTime) {
-            //        let pickInfo= "Pick up at Location A on" +
-            //            " Bus Station Side at "+pickTime;
-            //        driver.sleep(3000);
-            //        menuPage.validateDelWay(pickInfo);
-            //    })
-            //)
-            //.then(ComFun.takeScreenshot(driver,"pickUpInfo.jpeg"))
-            //.catch(function(err) {
-            //    console.log(err);
-            //});
+            //.then(deliveryPage.eatHere())
+            //.then(deliveryPage.inputTableNum())
+            ////.then(ComFun.takeScreenshot(driver,"tableNum.jpeg"))
+            //.then(driver.sleep(2000))
+            //.then(menuPage.validateDelWay())
+            //.then(ComFun.takeScreenshot(driver,"eatHereInfo.jpeg"))
+            .then(menuPage.enterDelivery())
+            .then(deliveryPage.pickUp())
+            .then(deliveryPage.choosePickTime(2))
+            .then(ComFun.takeScreenshot(driver,"pickTime.jpeg"))
+            .then(deliveryPage.getPickTime()
+                .then(deliveryPage.clickTogoDone())
+                .then(function(pickTime) {
+                    let pickInfo= "Pick up at Location A on" +
+                        " Bus Station Side at "+pickTime;
+                    driver.sleep(3000);
+                    menuPage.validateDelWay(pickInfo);
+                })
+            )
+            .then(ComFun.takeScreenshot(driver,"pickUpInfo.jpeg"))
+            .catch(function(err) {
+                console.log(err);
+            });
 
     });
 
@@ -106,12 +106,14 @@ test.describe( 'dockyard-auto-test', function() {
         promise//
         //.then(loginPage.login(loginDatas))
         .then(driver.sleep(2000))
-        .then(menuPage.enterRestaurant())
-        .then(westernPage.takeOrder(3)
+        .then(menuPage.enterRestaurant('western'))
+        //.then(westernPage.takeOrder(3))
+        .then(driver.sleep(2000))
+        .then(westernPage.order(2))
         //    .then(function(arr){
         //    console.log(arr);
         //})
-        )
+        //)
         .then(driver.sleep(3000))
         .then(commonPage.checkOut());
     });

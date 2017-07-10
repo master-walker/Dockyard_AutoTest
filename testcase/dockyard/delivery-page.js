@@ -70,6 +70,7 @@ export default class DeliveryPage extends BasePage {
     }
 
     getPickTime() {
+
         let script="var els=document.getElementsByClassName" +
                     "('picker-opt picker-opt-selected');" +
                     "var txt=els[0].innerHTML;" +
