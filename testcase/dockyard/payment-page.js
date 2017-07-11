@@ -53,6 +53,7 @@ export default class PaymentPage extends BasePage {
     }
 
     addCard() {
+
         super.getElements(addBtn).then(function(els){
             els[0].click()
         });

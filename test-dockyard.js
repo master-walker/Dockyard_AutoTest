@@ -43,7 +43,7 @@ let newLgDatas=[username,newPwd];
 let newPsds=[newPwd,oldPwd,oldPwd];
 
 test.describe( 'dockyard-auto-test', function() {
-    this.timeout( 190000 );
+    this.timeout( 90000 );
 
     test.before( function() {
         driver.get(url);
@@ -109,19 +109,21 @@ test.describe( 'dockyard-auto-test', function() {
         //.then(loginPage.login(loginDatas))
         .then(driver.sleep(2000))
         .then(menuPage.enterRestaurant('western'))
-        .then(driver.sleep(2000))
+        .then(driver.sleep(1000))
         .then(westernPage.order('usual'))
         .then(westernPage.order('combo',3))
         .then(westernPage.order('options'))
-        .catch(function(err){
-            console.log(err);
-        })
+        //.catch(function(err){
+        //    console.log(err);
+        //})
         .then(driver.sleep(1000))
         .then(paymentPage.addCard())
-        //.then(commonPage.checkOut());
+        //.then(commonPage.checkOut())
         .catch(function(err) {
             console.log(err);
         });
+
+
     });
 
     //test.it('Login and validate', function() {
