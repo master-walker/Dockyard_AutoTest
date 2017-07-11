@@ -30,7 +30,7 @@ export default class CommonPage extends BasePage{
         });
         //super.clickElement(checkOut2);
         this.driver.sleep(2000);
-        super.clickElement(payCard,2000);
+        // super.clickElement(payCard,2000);
         //this.driver.sleep(2000);
 
 

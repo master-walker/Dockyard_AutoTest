@@ -256,9 +256,15 @@
       "xpath" :"//ion-col/button[@class='payment-methods_new__btn button button-md button-default button-default-md button-full button-full-md']"
     },
     "monthPicker" : {
+      "xpath" :"//div/button[@class='picker-opt']"
+    },
+    "monthPicker8" : {
       "xpath" :"//div/button[@class='picker-opt'][8]"
     },
     "yearPicker" : {
+      "xpath" :"//div/button[@class='picker-opt']"
+    },
+    "yearPicker2" : {
       "xpath" :"//div/button[@class='picker-opt'][2]"
     },
     "doneBtn" : {
@@ -319,12 +325,6 @@
     "selectTimer" : {
       "xpath" : "//button[@class='picker-opt picker-opt-selected']"
     }
-
-
-
-
-
-
 
 
   },

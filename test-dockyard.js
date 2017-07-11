@@ -117,8 +117,9 @@ test.describe( 'dockyard-auto-test', function() {
         //    console.log(err);
         //})
         .then(driver.sleep(1000))
+            .then(commonPage.checkOut())
         .then(paymentPage.addCard())
-        //.then(commonPage.checkOut())
+
         .catch(function(err) {
             console.log(err);
         });
