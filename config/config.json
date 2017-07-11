@@ -1,7 +1,6 @@
 {
-
-"url":"https://dockyard-test.gobindo.com/",
-"url1":"https://www.google.com/",
+"url":"http://dockyard.stg.gobindo.com/",
+"url2":"https://dockyard-test.gobindo.com/",
 "timeOut":"60000",
 "TableNum":"A01",
 "CVV":"737",

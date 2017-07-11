@@ -23,15 +23,15 @@ export default class CommonPage extends BasePage{
     checkOut() {
 
 
-        super.clickElement(checkOut);
-        this.driver.sleep(2000);
+        super.clickElement(checkOut,2000);
+        //this.driver.sleep(2000);
         super.getElements(checkOut2).then(function(els) {
             els[1].click();
         });
         //super.clickElement(checkOut2);
         this.driver.sleep(2000);
-        super.clickElement(payCard);
-        this.driver.sleep(2000);
+        super.clickElement(payCard,2000);
+        //this.driver.sleep(2000);
 
 
     }

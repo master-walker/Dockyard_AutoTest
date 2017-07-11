@@ -65,8 +65,6 @@ export default class DeliveryPage extends BasePage {
 
             });
         }
-        //super.clickElement(time1);
-        //this.driver.sleep(2000);
     }
 
     getPickTime() {

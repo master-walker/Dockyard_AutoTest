@@ -101,7 +101,7 @@ export default class BasePage {
                 driver.sleep(sleepTime);
             }
         });
-        console.log(info);
+        //console.log(info);
 
 
     }

@@ -12,7 +12,8 @@ import AboutUsPage from './testcase/dockyard/about-us-page.js'
 import ChangePasswdPage from './testcase/dockyard/change-passwd-page.js'
 import MenuPage from './testcase/dockyard/menu-page.js'
 import DeliveryPage from './testcase/dockyard/delivery-page.js'
-import WesternPage from './testcase/dockyard/western-page.js'
+import WesternPage from './testcase/dockyard/western-page.js';
+import PaymentPage from './testcase/dockyard/payment-page.js'
 import elements from './elements/dockyard-elements.json'
 import chai from 'chai';
 import {userData} from './testcase/dockyard/sign-up-page.js'
@@ -32,6 +33,7 @@ let menuPage=new MenuPage(driver);
 let deliveryPage=new DeliveryPage(driver);
 let westernPage=new WesternPage(driver);
 let commonPage=new CommonPage(driver);
+let paymentPage=new PaymentPage(driver);
 
 let {username,password} =testData.loginData;
 let loginDatas=[username,password];
@@ -41,7 +43,7 @@ let newLgDatas=[username,newPwd];
 let newPsds=[newPwd,oldPwd,oldPwd];
 
 test.describe( 'dockyard-auto-test', function() {
-    this.timeout( 290000 );
+    this.timeout( 190000 );
 
     test.before( function() {
         driver.get(url);
@@ -85,7 +87,7 @@ test.describe( 'dockyard-auto-test', function() {
             .then(menuPage.enterDelivery())
             .then(deliveryPage.pickUp())
             .then(deliveryPage.choosePickTime(2))
-            .then(ComFun.takeScreenshot(driver,"pickTime.jpeg"))
+            //.then(ComFun.takeScreenshot(driver,"pickTime.jpeg"))
             .then(deliveryPage.getPickTime()
                 .then(deliveryPage.clickTogoDone())
                 .then(function(pickTime) {
@@ -95,7 +97,7 @@ test.describe( 'dockyard-auto-test', function() {
                     menuPage.validateDelWay(pickInfo);
                 })
             )
-            .then(ComFun.takeScreenshot(driver,"pickUpInfo.jpeg"))
+            //.then(ComFun.takeScreenshot(driver,"pickUpInfo.jpeg"))
             .catch(function(err) {
                 console.log(err);
             });
@@ -107,15 +109,19 @@ test.describe( 'dockyard-auto-test', function() {
         //.then(loginPage.login(loginDatas))
         .then(driver.sleep(2000))
         .then(menuPage.enterRestaurant('western'))
-        //.then(westernPage.takeOrder(3))
         .then(driver.sleep(2000))
-        .then(westernPage.order(2))
-        //    .then(function(arr){
-        //    console.log(arr);
-        //})
-        //)
-        .then(driver.sleep(3000))
-        .then(commonPage.checkOut());
+        .then(westernPage.order('usual'))
+        .then(westernPage.order('combo',3))
+        .then(westernPage.order('options'))
+        .catch(function(err){
+            console.log(err);
+        })
+        .then(driver.sleep(1000))
+        .then(paymentPage.addCard())
+        //.then(commonPage.checkOut());
+        .catch(function(err) {
+            console.log(err);
+        });
     });
 
     //test.it('Login and validate', function() {

@@ -30,7 +30,11 @@
   },
   "tableNumber":"A01",
   "eatHereInfo":"Eat Here - TableA01",
-  "pickUpInfo1": "Pick up at Location A on Bus Station Side Immediate"
+  "pickUpInfo1": "Pick up at Location A on Bus Station Side Immediate",
+  "creditCardNum" :"4444 1111 1111 1111",
+  "cardHolder":"col",
+  "CVV":"737",
+  "tips":"66"
 
 
 

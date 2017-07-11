@@ -219,11 +219,67 @@
     "confirmBtn" : {
       "xpath" : "/html/body/ion-app/ion-modal/div/modifier-selector/ion-header/ion-navbar/ion-buttons[2]/button"
     },
+    "confirmBtn2" : {
+      "xpath" : "/html/body/ion-app/modifier-selector/ion-header/ion-navbar/ion-buttons[2]/button"
+    },
+    "confirmBtn3" : {
+      "xpath" : "/html/body/ion-app/modifier-selector[2]/ion-header/ion-navbar/ion-buttons[2]/button"
+    },
     "optionsBtn" : {
       "xpath":"//div/a[@class='options-btn']"
+    },
+    "optionsItems" : {
+      "xpath":"//ion-item/div/div[@class='input-wrapper']"
+    },
+    "optionsItems1" : {
+      "xpath":"/html/body/ion-app/modifier-selector[2]/ion-content/div[2]/form/ion-list/ion-list[1]/ion-item[1]/div[1]/div/ion-label/div"
+    }
+
+
+  },
+
+  "paymentPage" : {
+
+    "addBtn" : {
+      "xpath" :"//ion-label/button[@class='button button-md button-clear button-clear-md button-clear-md-white']"
+    },
+    "cardNumBox" : {
+      "xpath" :"//ion-input/input[@class='text-input text-input-md ng-pristine ng-invalid ng-touched']"
+    },
+    "cardDate" : {
+      "xpath" :"//ion-label/div[@class='payment-methods_new__select payment-methods_new__select_placeholder']"
+    },
+    "cdHolderBox" : {
+      "xpath" :"//ion-input/input[@class='text-input text-input-md ng-pristine ng-invalid ng-touched']"
+    },
+    "subBtn" : {
+      "xpath" :"//ion-col/button[@class='payment-methods_new__btn button button-md button-default button-default-md button-full button-full-md']"
+    },
+    "monthPicker" : {
+      "xpath" :"//div/button[@class='picker-opt'][8]"
+    },
+    "yearPicker" : {
+      "xpath" :"//div/button[@class='picker-opt'][2]"
+    },
+    "doneBtn" : {
+      "xpath" : "//div/div/button/span[contains(text(),'Done')]"
     }
 
   },
+
+  "checkOutPage" : {
+
+    "price" : {
+     "xpath": "//div/div[@class='price']"
+    },
+    "item" : {
+      "xpath": "//div/div[@class='title']"
+    },
+    "qty" : {
+      "xpath": "//div/div[@class='quantity']"
+    }
+  },
+
 
   "deliveryPage" :{
 
