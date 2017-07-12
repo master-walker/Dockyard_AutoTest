@@ -14,6 +14,8 @@ import MenuPage from './testcase/dockyard/menu-page.js'
 import DeliveryPage from './testcase/dockyard/delivery-page.js'
 import WesternPage from './testcase/dockyard/western-page.js';
 import PaymentPage from './testcase/dockyard/payment-page.js'
+import OrderSubPage from './testcase/dockyard/order-submit-page.js'
+import HistoryPage from './testcase/dockyard/history-page.js';
 import elements from './elements/dockyard-elements.json'
 import chai from 'chai';
 import {userData} from './testcase/dockyard/sign-up-page.js'
@@ -34,7 +36,10 @@ let deliveryPage=new DeliveryPage(driver);
 let westernPage=new WesternPage(driver);
 let commonPage=new CommonPage(driver);
 let paymentPage=new PaymentPage(driver);
+let orderSubPage=new OrderSubPage(driver);
+let historyPage=new HistoryPage(driver);
 
+let {orderInfo,backMenu,priceInfo,dishesInfo,modifierInfo,qtyInfo}=elements.orderSubPage;
 let {username,password} =testData.loginData;
 let loginDatas=[username,password];
 let promise = Promise.resolve();
@@ -43,7 +48,7 @@ let newLgDatas=[username,newPwd];
 let newPsds=[newPwd,oldPwd,oldPwd];
 
 test.describe( 'dockyard-auto-test', function() {
-    this.timeout( 90000 );
+    this.timeout( 190000 );
 
     test.before( function() {
         driver.get(url);
@@ -74,7 +79,34 @@ test.describe( 'dockyard-auto-test', function() {
 
     test.it('choose delivery and validate', function() {
 
-        promise.then(loginPage.login(loginDatas))
+        //(async function main() {
+        //    try{
+        //        await Promise.all([
+        //          loginPage.login(loginDatas),
+        //                driver.sleep(3000)
+        //        ]) ;
+        //        menuPage.enterDelivery();
+        //    deliveryPage.pickUp();
+        //            deliveryPage.choosePickTime(2);
+        //            ComFun.takeScreenshot(driver,"pickTime.jpeg");
+        //            deliveryPage.getPickTime();
+        //                deliveryPage.clickTogoDone();
+        //        (function(pickTime) {
+        //                    let pickInfo= "Pick up at Location A on" +
+        //                        " Bus Station Side at "+pickTime;
+        //                    driver.sleep(3000);
+        //                    menuPage.validateDelWay(pickInfo);
+        //                })()
+        //
+        //
+        //
+        //    }
+        //    catch(e) {
+        //        console.log(e);
+        //    }
+        //}());
+        promise
+            .then(loginPage.login(loginDatas))
             .then(driver.sleep(3000))
             //.then(bottomNav.switchNavBtn("menu"))
             //.then(menuPage.enterDelivery())
@@ -105,25 +137,56 @@ test.describe( 'dockyard-auto-test', function() {
     });
 
     test.it('create an order and validate', function() {
+        let orderInfo=[];
         promise//
         //.then(loginPage.login(loginDatas))
-        .then(driver.sleep(2000))
-        .then(menuPage.enterRestaurant('western'))
-        .then(driver.sleep(1000))
-        .then(westernPage.order('usual'))
-        .then(westernPage.order('combo',3))
-        .then(westernPage.order('options'))
-        //.catch(function(err){
-        //    console.log(err);
-        //})
-        .then(driver.sleep(1000))
-            .then(commonPage.checkOut())
-        .then(paymentPage.addCard())
+            .then(driver.sleep(2000))
+            .then(menuPage.enterRestaurant('western'))
+            .then(driver.sleep(1000))
+            .then(westernPage.order('usual'))
+            .then(westernPage.order('combo',3))
+            .then(westernPage.order('options'))
+            //.catch(function(err){
+            //    console.log(err);
+            //})
+            .then(driver.sleep(1000))
+            .then(commonPage.clickChckOut())
+            .then(paymentPage.addCard())
+            .then(commonPage.chooseCard())
+            .then(paymentPage.checkOut())
+            //.then(orderSubPage.getOrderInfo())
+            //.then(driver.sleep(3000))
+            //.then(orderSubPage.backToMenu())
+            //.then(bottomNav.switchNavBtn("history"))
+            //.then(historyPage.enterOrderDetails())
+            //.then(orderInfo=orderSubPage.getOrderInfo())
+            //.then(function(info){
+            //    console.log(info);
+            //})
+            .catch(function(err) {
+                console.log(err);
+            });
+        (async function main() {
+            try {
+                let orderInfos1=await orderSubPage.getOrderInfos(orderInfo);
+                let priceInfos1=await orderSubPage.getOrderInfo(priceInfo);
+                await driver.sleep(3000);
+                await orderSubPage.backToMenu();
+                await bottomNav.switchNavBtn("history");
+                await historyPage.enterOrderDetails();
+                let orderInfos2=await orderSubPage.getOrderInfo();
+                let priceInfos2=await orderSubPage.getOrderInfo(priceInfo);
+                if(Object.is(orderInfos1.sort().toString(),orderInfos2.sort().toString())) {
+                    console.log(222);
+                }
+                if(priceInfos1.toString()===priceInfos2.toString()) {
+                    console.log(223);
+                }
+            }
+            catch(e) {
 
-        .catch(function(err) {
-            console.log(err);
-        });
-
+            }
+        }());
 
     });
 

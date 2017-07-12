@@ -15,10 +15,12 @@ const waitTime=config.driverWaitTime;
 let expect = chai.expect;
 let should = chai.should();
 
-let {addBtn,cardNumBox,cardDate,cdHolderBox,subBtn,monthPicker,monthPicker8,yearPicker,doneBtn}=elements.paymentPage;
-let {creditCardNum,cardHolder}=testData;
+let {addBtn,cardNumBox,cardDate,cdHolderBox,subBtn,monthPicker,monthPicker8,yearPicker,yearPicker2,doneBtn,cvvBox,tipsBox,confirmPayBtn}=elements.paymentPage;
+let {creditCardNum,cardHolder,CVV,tips}=testData;
 let addCardEles=[cardNumBox,cdHolderBox,subBtn];
 let cardData=[creditCardNum,cardHolder];
+let payEls=[cvvBox,tipsBox,confirmPayBtn];
+let payData=[CVV,tips];
 
 
 export default class PaymentPage extends BasePage {
@@ -37,22 +39,18 @@ export default class PaymentPage extends BasePage {
             super.getElements(monthPicker).then(function(els){
                 for(let i=1;i<=num;i++) {
                     els[i].click();
-                    driver.sleep(2000);
+                    driver.sleep(1000);
                 }
 
             });
         }
-        // super.clickElement(monthPicker8,2000);
         super.clickElement(doneBtn,2000);
 
         super.getElements(cardDate).then(function(els){
             els[0].click();
         });
         this.driver.sleep(2000);
-        super.getElement(yearPicker).then(function(els){
-            els[2].click()
-        });
-        // super.clickElement(yearPicker,2000);
+        super.clickElement(yearPicker2);
         super.clickElement(doneBtn,2000);
 
 
@@ -64,14 +62,19 @@ export default class PaymentPage extends BasePage {
             els[0].click()
         });
         this.driver.sleep(2000);
-        //super.clickElement(addBtn,2000);
 
         this.chooseDate();
 
-        this.driver.sleep(2000);
-
-
         super.submitData(addCardEles,cardData);
+
+
+    }
+
+    checkOut() {
+
+        super.submitData(payEls,payData);
+        this.driver.sleep(5000);
+
 
 
     }

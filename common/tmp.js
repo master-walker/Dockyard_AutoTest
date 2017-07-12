@@ -338,7 +338,16 @@ for(let j=0;j<num+1;j++) {
     //    });
     //
     //})(j)
-
+    //"confirmPayBtn" : {
+    //    "xpath" : "//ion-nav/ng-component[4]/ion-footer/ion-list/button"
+    getPriceInfo() {
+    }
+    getDishesInfo() {
+    }
+    getModifierInfo() {
+    }
+    getQtyInfo() {
+    }
 }
 
 

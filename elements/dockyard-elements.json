@@ -244,13 +244,13 @@
       "xpath" :"//ion-label/button[@class='button button-md button-clear button-clear-md button-clear-md-white']"
     },
     "cardNumBox" : {
-      "xpath" :"//ion-input/input[@class='text-input text-input-md ng-pristine ng-invalid ng-touched']"
+      "xpath" :"//ion-input/input[@formcontrolname='cardNumber']"
     },
     "cardDate" : {
       "xpath" :"//ion-label/div[@class='payment-methods_new__select payment-methods_new__select_placeholder']"
     },
     "cdHolderBox" : {
-      "xpath" :"//ion-input/input[@class='text-input text-input-md ng-pristine ng-invalid ng-touched']"
+      "xpath" :"//ion-input/input[@formcontrolname='holder']"
     },
     "subBtn" : {
       "xpath" :"//ion-col/button[@class='payment-methods_new__btn button button-md button-default button-default-md button-full button-full-md']"
@@ -265,11 +265,56 @@
       "xpath" :"//div/button[@class='picker-opt']"
     },
     "yearPicker2" : {
-      "xpath" :"//div/button[@class='picker-opt'][2]"
+      "xpath" :"//div/button[@class='picker-opt'][1]"
     },
     "doneBtn" : {
       "xpath" : "//div/div/button/span[contains(text(),'Done')]"
+    },
+    "cvvBox" : {
+      "xpath" : "//ion-input/input[@placeholder='CVV']"
+    },
+    "tipsBox" : {
+      "xpath" : "//ion-col/input[@placeholder='Tips']"
+    },
+    "confirmPayBtn" : {
+        "xpath" : "//ion-list/button[contains(text(),'Confirm Payment')]"
+
     }
+  },
+
+  "orderSubPage" : {
+
+    "orderInfo" : {
+      "xpath" :"//ion-col/span[@class='order-info']"
+    },
+    "backMenu" : {
+      "xpath" :"//ion-nav/ng-component[5]/ion-footer/button[contains(text(),'Back To Menu')]"
+    },
+    "priceInfo" : {
+      "xpath" : "//div/div[@class='price']"
+    },
+    "dishesInfo" : {
+      "xpath" : "//div/div[@class='title']"
+    },
+    "modifierInfo" : {
+      "xpath" : "//modifiers-display/span"
+    },
+    "qtyInfo" : {
+      "xpath" : "//div/div[@class='quantity']"
+    }
+
+
+
+
+
+  },
+
+  "historyPage" : {
+
+    "orderBtn" : {
+      "xpath" :"//ion-content/div[2]/div/ion-list/button[1]"
+    }
+
 
   },
 
