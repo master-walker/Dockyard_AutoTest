@@ -38,17 +38,30 @@ export default class OrderSubPage extends BasePage {
     //}
 
     getOrderInfos(locators,num=0) {
+
         let driver=this.driver;
-        let orderInfos=[];
-        super.getElements(locators).then(function(els){
-            for(let i=0;i<els.length;i++) {
-                let eleTxt=els[i].getText();
-                orderInfos.push(eleTxt);
-                driver.sleep(1000);
-            }
+
+        return new Promise(function(resolve){
+
+            let orderInfos=[];
+            driver.wait(
+                until.elementsLocated(locators), 30000)
+                .then(function(els){
+
+                for(let i=0;i<els.length;i++) {
+                    let eleTxt=els[i].getText();
+                    driver.sleep(2000);
+                    orderInfos.push(eleTxt);
+
+                }
+
+            });
+            resolve(orderInfos)
         });
-        console.log(orderInfos);
-        return orderInfos;
+
+        //console.log(orderInfos);
+        //return ;
+        //return Promise.resolve(orderInfos);
 
     }
 

@@ -1,3 +1,7 @@
+/**
+ * Created by bindo on 7/13/17.
+ */
+
 import test from 'selenium-webdriver/testing';
 import config from './config/config.json';
 import ComFun from './common/common-function.js';
@@ -19,6 +23,7 @@ import HistoryPage from './testcase/dockyard/history-page.js';
 import elements from './elements/dockyard-elements.json'
 import chai from 'chai';
 import {userData} from './testcase/dockyard/sign-up-page.js'
+//import iwebdriver from 'selenium-webdriver/bin/JavascriptExecutor'//
 
 const url=config.url;
 let expect=chai.expect;
@@ -76,99 +81,30 @@ test.describe( 'dockyard-auto-test', function() {
     //
     //});
 
-
-
-    test.it('choose delivery and validate', function() {
-
-
-        promise
-            .then(loginPage.login(loginDatas))
-            .then(driver.sleep(3000))
-        //    //.then(bottomNav.switchNavBtn("menu"))
-        //    //.then(menuPage.enterDelivery())
-        //    //.then(deliveryPage.eatHere())
-        //    //.then(deliveryPage.inputTableNum())
-        //    ////.then(ComFun.takeScreenshot(driver,"tableNum.jpeg"))
-        //    //.then(driver.sleep(2000))
-        //    //.then(menuPage.validateDelWay())
-        //    //.then(ComFun.takeScreenshot(driver,"eatHereInfo.jpeg"))
-            .then(menuPage.enterDelivery())
-            .then(deliveryPage.pickUp())
-            .then(deliveryPage.choosePickTime(2))
-            //.then(ComFun.takeScreenshot(driver,"pickTime.jpeg"))
-            .then(deliveryPage.getPickTime()
-                //.then(deliveryPage.clickTogoDone())
-                .then(function(pickTime) {
-                    let pickInfo= "Pick up at Location A on" +
-                        " Bus Station Side at "+pickTime;
-                    driver.sleep(3000);
-                    menuPage.validateDelWay(pickInfo);
-                })
-            )
-            //.then(ComFun.takeScreenshot(driver,"pickUpInfo.jpeg"))
-            .catch(function(err) {
-                console.log(err);
-            });
-
-    });
-
-    test.it('create an order and validate', async function() {
-
-        promise
-        //.then(loginPage.login(loginDatas))
-            .then(driver.sleep(2000))
-            .then(menuPage.enterRestaurant('western'))
-            .then(driver.sleep(1000))
-            .then(westernPage.order('usual'))
-            .then(westernPage.order('combo',3))
-            .then(westernPage.order('options'))
-            //.catch(function(err){
-            //    console.log(err);
-            //})
-            .then(driver.sleep(1000))
-            .then(commonPage.clickChckOut())
-            .then(paymentPage.addCard())
-            .then(commonPage.chooseCard())
-            .then(paymentPage.checkOut())
-            .then(driver.sleep(3000))
-            //.then(orderSubPage.getOrderInfos(orderInfo)
-            //    .then(function(info){
-            //    console.log(info);
-            //})
-            //)
-            //.then(driver.sleep(3000))
-            //.then(orderSubPage.backToMenu())
-            //.then(bottomNav.switchNavBtn("history"))
-            //.then(historyPage.enterOrderDetails())
-            //
-            //.then(orderSubPage.getOrderInfos(orderInfo)
-            //    .then(function(info){
-            //    console.log(info);
-            //})
-            //)
-            //.then(function(info){
-            //    console.log(info);
-            //})
-            .catch(function(err) {
-                console.log(err);
-            });
+    test.it('choose delivery and validate', async function() {
 
         //(async function main() {
-            try {
-                let orderInfos1=await orderSubPage.getOrderInfos(orderInfo);
-                let priceInfos1=await orderSubPage.getOrderInfos(priceInfo);
-                 driver.sleep(3000);
-                 orderSubPage.backToMenu();
-                 bottomNav.switchNavBtn("history");
-                 historyPage.enterOrderDetails();
-                let orderInfos2=await orderSubPage.getOrderInfos(orderInfo);
-                let priceInfos2=await orderSubPage.getOrderInfos(priceInfo);
-                if(Object.is(await orderInfos1.sort().toString(),await orderInfos2.sort().toString())) {
-                    console.log(222);
-                }
-                if(priceInfos1.toString()===priceInfos2.toString()) {
-                    console.log(223);
-                }
+            try{
+                await Promise.all([
+                    loginPage.login(loginDatas),
+                    driver.sleep(3000),
+                    menuPage.enterDelivery(),
+                    deliveryPage.pickUp(),
+                    deliveryPage.choosePickTime(2),
+                    ComFun.takeScreenshot(driver,"pickTime.jpeg")
+
+                ]);
+
+                await Promise.all([
+                    deliveryPage.getPickTime()
+                    //deliveryPage.clickTogoDone()
+                ]).then((function(pickTime) {
+                    let pickInfo= "Pick up at Location A on" +
+                        " Bus Station Side at "+pickTime;
+                    driver.sleep(2000);
+                    menuPage.validateDelWay(pickInfo);
+                })()) ;
+
             }
             catch(e) {
                 console.log(e);
@@ -177,7 +113,83 @@ test.describe( 'dockyard-auto-test', function() {
 
     });
 
+    test.it('create an order and validate', async function() {
+        //let orderInfo=[];
 
+        //(async function main(){
+            try{
+                await Promise.all([
+                    driver.sleep(2000),
+                    menuPage.enterRestaurant('western'),
+                    driver.sleep(1000),
+                    westernPage.order('usual'),
+                    westernPage.order('combo',3),
+                    westernPage.order('options'),
+                    driver.sleep(1000),
+                    commonPage.clickChckOut(),
+                    paymentPage.addCard(),
+                    commonPage.chooseCard(),
+                    paymentPage.checkOut()
+                ]);
+                //let orderInfos1=await orderSubPage.getOrderInfos(orderInfo);
+                //await driver.sleep(2000);
+                //let priceInfos1=await orderSubPage.getOrderInfos(priceInfo);
+                //await driver.sleep(2000);
+                //await menuPage.enterRestaurant('western');
+                //await driver.sleep(1000);
+                //await westernPage.order('usual');
+                //await westernPage.order('combo',3);
+                //await westernPage.order('options');
+                //await driver.sleep(1000);
+                //await commonPage.clickChckOut();
+                //await paymentPage.addCard();
+                //await commonPage.chooseCard();
+                //await paymentPage.checkOut();
+                await driver.sleep(2000);
+                let orderInfos2=await orderSubPage.getOrderInfos(orderInfo);
+                //let priceInfos2=await orderSubPage.getOrderInfos(priceInfo);
+                await orderSubPage.backToMenu();
+                await bottomNav.switchNavBtn("history");
+                await historyPage.enterOrderDetails();
+                console.log(orderInfos2);
+
+                //if(Object.is(orderInfos1.sort().toString(),orderInfos2.sort().toString())) {
+                //    console.log(222);
+                //}
+                //if(priceInfos1.toString()===priceInfos2.toString()) {
+                //    console.log(223);
+                //}
+
+
+            }catch(e) {
+                console.log(e);
+            }
+
+        //}());
+
+        //(async function main() {
+        //    try {
+        //        let orderInfos1=await orderSubPage.getOrderInfos(orderInfo);
+        //        let priceInfos1=await orderSubPage.getOrderInfos(priceInfo);
+        //        await driver.sleep(3000);
+        //        await orderSubPage.backToMenu();
+        //        await bottomNav.switchNavBtn("history");
+        //        await historyPage.enterOrderDetails();
+        //        let orderInfos2=await orderSubPage.getOrderInfos(orderInfo);
+        //        let priceInfos2=await orderSubPage.getOrderInfos(priceInfo);
+        //        if(Object.is(orderInfos1.sort().toString(),orderInfos2.sort().toString())) {
+        //            console.log(222);
+        //        }
+        //        if(priceInfos1.toString()===priceInfos2.toString()) {
+        //            console.log(223);
+        //        }
+        //    }
+        //    catch(e) {
+        //
+        //    }
+        //}());
+
+    });
 
     //test.it('Login and validate', function() {
     //    let promise = Promise.resolve();

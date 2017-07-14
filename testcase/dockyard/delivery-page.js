@@ -74,6 +74,10 @@ export default class DeliveryPage extends BasePage {
                     "var txt=els[0].innerHTML;" +
                     "return txt";
         let pObj=Promise.resolve(this.driver.executeScript(script));
+
+        super.clickElement(toGoDone,2000);
+        //this.driver.sleep(2000);
+
         return pObj.then(function(value){
             return value;
         });
